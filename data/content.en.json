@@ -325,7 +325,9 @@
   "contact": {
     "title": "Let's talk",
     "subtitle": "Let's work together? Get in touch and let's chat!",
-    "cta": "Get in Touch"
+    "cta": "Get in Touch",
+    "text": "I respond within 24 hours. I am open to remote opportunities."
+
   },
   "ai_chat": {
     "trigger_label": "Ask about Cristiano",

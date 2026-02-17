@@ -146,17 +146,32 @@ function renderStack() {
   `).join('');
 }
 
-// ─── PROJECTS ─────────────────────────────────────────────────────────────────
+// ─── PROJECTS (with pagination) ───────────────────────────────────────────────
+
+let _projectsShown = 3; // how many projects currently visible
 
 function renderProjects() {
   const { projects } = data;
   setText('projects-title', projects.title);
-  setText('projects-more-btn', projects.cta_more);
+  
+  _projectsShown = 3; // reset to 3 on lang change
+  projectsShowMore();
+}
 
+function projectsShowMore() {
+  const { projects } = data;
   const container = document.getElementById('projects-grid');
+  const btn = document.getElementById('projects-more-btn');
   if (!container) return;
-  container.innerHTML = projects.items.map((p, i) => `
-    <article class="project-card gradient-${p.gradient}" style="animation-delay:${i * 0.1}s">
+
+  const items = projects.items || [];
+  const visible = items.slice(0, _projectsShown);
+  const hasMore = _projectsShown < items.length;
+
+  // render visible projects
+  container.innerHTML = visible.map((p, i) => `
+    <article class="project-card gradient-${p.gradient}" 
+             style="animation-delay:${i * 0.1}s">
       <div class="project-icon">${p.icon}</div>
       <div class="project-header">
         <h3>${p.title}</h3>
@@ -170,6 +185,25 @@ function renderProjects() {
       </ul>
     </article>
   `).join('');
+
+  // update button
+  if (!btn) return;
+  if (hasMore) {
+    btn.style.display = 'inline-flex';
+    const remaining = items.length - _projectsShown;
+    const showNext = Math.min(remaining, 3);
+    btn.innerHTML = `
+      <span>${projects.cta_more || 'More Projects'} (+${showNext})</span>
+      <i class="fa fa-arrow-right" style="font-size:0.75rem;"></i>
+    `;
+    btn.onclick = (e) => {
+      e.preventDefault();
+      _projectsShown += 3;
+      projectsShowMore();
+    };
+  } else {
+    btn.style.display = 'none';
+  }
 }
 
 // ─── EXPERIENCE ───────────────────────────────────────────────────────────────
@@ -414,6 +448,7 @@ function renderContact() {
   setText('contact-title', contact.title);
   setText('contact-subtitle', contact.subtitle);
   setText('contact-cta-btn', contact.cta);
+  setText('contact-text', contact.text);
   setAttr('contact-email-link', 'href', `mailto:${meta.email}`);
   setAttr('contact-linkedin-link', 'href', meta.linkedin);
   setAttr('contact-cta-btn', 'href', `mailto:${meta.email}`);

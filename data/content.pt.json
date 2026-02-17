@@ -154,6 +154,54 @@
         ],
         "gradient": "neon-cyan",
         "icon": "🗄️"
+      },
+      {
+        "id": 4,
+        "title": "Sistema de Gestão",
+        "stack": [
+          "PHP",
+          "MySQL",
+          "Docker"
+        ],
+        "stack_label": "Stack",
+        "achievements": [
+          "Sistema multi-tenant com isolamento completo",
+          "Performance otimizada com índices e cache"
+        ],
+        "gradient": "neon-purple",
+        "icon": "🏢"
+      },
+      {
+        "id": 5,
+        "title": "Integração de Pagamentos",
+        "stack": [
+          "Node.js",
+          "Stripe",
+          "PostgreSQL"
+        ],
+        "stack_label": "Stack",
+        "achievements": [
+          "Processamento seguro de transações",
+          "Webhooks com retry automático"
+        ],
+        "gradient": "neon-cyan",
+        "icon": "💳"
+      },
+      {
+        "id": 6,
+        "title": "Monitoramento em Tempo Real",
+        "stack": [
+          "Node.js",
+          "WebSockets",
+          "Redis"
+        ],
+        "stack_label": "Stack",
+        "achievements": [
+          "Dashboard com atualização em tempo real",
+          "Sistema de alertas via push notifications"
+        ],
+        "gradient": "neon-green",
+        "icon": "📡"
       }
     ]
   },
@@ -325,7 +373,8 @@
   "contact": {
     "title": "Vamos conversar",
     "subtitle": "Vamos trabalhar juntos? Entre em contato e vamos conversar!",
-    "cta": "Entre em Contato"
+    "cta": "Entre em Contato",
+    "text": "Respondo em até 24 horas. Estou aberto a oportunidades remotas."
   },
   "ai_chat": {
     "trigger_label": "Pergunte sobre o Cristiano",
@@ -352,12 +401,12 @@
         "href": "#experience"
       },
       {
-        "label": "Formação",
-        "href": "#education"
+        "label": "Habilidades",
+        "href": "#experience"
       },
       {
-        "label": "Habilidades",
-        "href": "#skills"
+        "label": "Formação",
+        "href": "#education"
       },
       {
         "label": "Contato",

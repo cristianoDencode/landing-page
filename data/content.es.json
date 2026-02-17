@@ -325,7 +325,8 @@
   "contact": {
     "title": "Hablemos",
     "subtitle": "¿Trabajamos juntos? ¡Ponte en contacto y conversemos!",
-    "cta": "Contactar"
+    "cta": "Contactar",
+    "text": "Respondo en un plazo de hasta 24 horas. Estoy abierto a oportunidades remotas."
   },
   "ai_chat": {
     "trigger_label": "Pregunta sobre Cristiano",
