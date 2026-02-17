@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio — Full Stack Developer" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portfolio — Full Stack Developer" />
+  <meta property="og:description" content="Especialista em PHP, Node e automações." />
+
+  <title>Portfolio — Full Stack Developer</title>
+
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+
+<!-- Background grid lines -->
+<div class="bg-grid" aria-hidden="true"></div>
+
+<!-- ─── NAVIGATION ──────────────────────────── -->
+<nav id="main-nav" role="navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">CS<span style="color:var(--text-secondary)">.</span>DEV</a>
+
+      <!-- Desktop links -->
+      <div id="nav-links"></div>
+
+      <div style="display:flex; align-items:center; gap:8px;">
+        <!-- Language switcher -->
+        <div class="lang-switcher" role="group" aria-label="Idioma">
+          <button class="lang-btn active" id="lang-pt" onclick="loadContent('pt')" aria-label="Português">PT</button>
+          <button class="lang-btn" id="lang-en" onclick="loadContent('en')" aria-label="English">EN</button>
+          <button class="lang-btn" id="lang-es" onclick="loadContent('es')" aria-label="Español">ES</button>
+        </div>
+
+        <!-- Mobile burger -->
+        <button id="burger-btn" aria-label="Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" role="menu">
+    <!-- Populated by JS -->
+  </div>
+</nav>
+
+<!-- ─── HERO ─────────────────────────────────── -->
+<section id="hero">
+  <div class="container" style="position:relative; z-index:1;">
+    <div class="hero-grid">
+
+      <!-- Left: content -->
+      <div class="hero-content">
+        <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--neon-green); letter-spacing:0.15em; margin-bottom:12px; text-transform:uppercase;">
+          ◈ Available for opportunities
+        </div>
+        <h1 id="hero-name">CRISTIANO SOUZA</h1>
+        <p id="hero-role">Desenvolvedor Full Stack Pleno</p>
+        <p id="hero-bio">Especialista em PHP, Node e automações com foco em performance e escalabilidade.</p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="hero-projects-btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+            Ver Projetos
+          </button>
+          <a class="btn btn-secondary" id="hero-cv-btn" href="#" target="_blank" rel="noopener">
+            <i class="fa fa-file-alt"></i> Ver CV
+          </a>
+          <a class="btn btn-outline" id="hero-contact-btn" href="#contact" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'}); return false;">
+            Contato
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a id="hero-github" href="#" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a id="hero-linkedin" href="#" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a id="hero-email" href="#" class="social-icon" aria-label="Email">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <span class="social-email" id="hero-email-text"></span>
+        </div>
+      </div>
+
+      <!-- Right: photo -->
+      <div class="hero-visual">
+        <div class="hero-photo-frame">
+          <img id="hero-photo" src="assets/photo.png" alt="Developer photo" onerror="this.parentElement.innerHTML='<div class=\'hero-photo-placeholder\'></div>'" />
+        </div>
+
+        <!-- Stack panel overlay -->
+        <div class="hero-stack-panel">
+          <div style="font-family:var(--font-mono); font-size:0.65rem; color:var(--neon-green); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:12px;">
+            Stack
+          </div>
+          <div style="display:flex; flex-direction:column; gap:8px;" id="hero-stack-mini">
+            <!-- Populated by JS after stack data loads -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Right spacer: balances the 3-col grid -->
+      <div class="hero-spacer"></div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ─── MY STACK ──────────────────────────────── -->
+<section id="stack">
+  <div class="container">
+    <h2 class="section-title animate-on-scroll" id="stack-title">Minha Stack</h2>
+    <div id="stack-grid" class="animate-on-scroll"></div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ─── PROJECTS ─────────────────────────────── -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title animate-on-scroll" id="projects-title">Projetos em Destaque</h2>
+    <div id="projects-grid"></div>
+    <div class="projects-more animate-on-scroll">
+      <a class="btn btn-secondary" id="projects-more-btn" href="#" target="_blank" rel="noopener">
+        Outros Projetos <i class="fa fa-arrow-right" style="font-size:0.75rem;"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ─── EXPERIENCE + SKILLS ───────────────────── -->
+<section id="experience" style="background: var(--bg-deep);">
+  <div class="container">
+    <div class="two-col-section">
+
+      <!-- Experience -->
+      <div class="animate-on-scroll">
+        <h2 class="section-title" id="experience-title">Experiência Profissional</h2>
+        <div id="experience-list"></div>
+      </div>
+
+      <!-- Skills -->
+      <div class="animate-on-scroll" style="animation-delay:0.1s">
+        <h2 class="section-title" id="skills-title">Habilidades e Diferenciais</h2>
+        <div id="skills-list"></div>
+      </div>
+
+      <!-- Right spacer: balances the 3-col grid -->
+      <div class="hero-spacer"></div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ─── EDUCATION & CERTIFICATIONS ────────────── -->
+<section id="education">
+  <div class="container">
+    <h2 class="section-title animate-on-scroll" id="education-title">Formação & Certificações</h2>
+    <div id="education-list" class="education-grid animate-on-scroll"></div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ─── CONTACT ───────────────────────────────── -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <h2 class="section-title animate-on-scroll" id="contact-title">Vamos conversar</h2>
+      <p id="contact-subtitle" class="animate-on-scroll"></p>
+
+      <div class="contact-box animate-on-scroll">
+        <div style="font-size:2.5rem;">📬</div>
+
+        <p style="font-size:0.9rem; color:var(--text-secondary); text-align:center; max-width:340px;">
+          Respondo em até 24 horas. Estou aberto a oportunidades remotas e freelance.
+        </p>
+
+        <div class="contact-icons">
+          <a id="contact-email-link" href="#" class="contact-icon-btn" title="Email">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a id="contact-linkedin-link" href="#" target="_blank" rel="noopener" class="contact-icon-btn" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+
+        <a class="btn btn-primary" id="contact-cta-btn" href="#">
+          <i class="fa fa-paper-plane"></i>
+          <span id="contact-cta-text">Entre em Contato</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <p class="footer-text">
+      Built with <span class="footer-neon">♥</span> · Headless JSON CMS · Hosted on GitHub Pages
+    </p>
+  </div>
+</footer>
+
+<!-- ─── AI CHAT FAB ───────────────────────────── -->
+<button class="chat-fab" onclick="toggleChat()" aria-label="Chat with AI assistant">
+  <div class="chat-fab-bot">🤖</div>
+  <span id="chat-trigger-label">Pergunte sobre o Cristiano</span>
+</button>
+
+<!-- ─── CHAT OVERLAY ──────────────────────────── -->
+<div class="chat-overlay" id="chat-overlay"></div>
+
+<!-- ─── CHAT MODAL ────────────────────────────── -->
+<div class="chat-modal" id="chat-modal" role="dialog" aria-modal="true" aria-labelledby="chat-modal-title">
+
+  <!-- Header -->
+  <div class="chat-header">
+    <div class="chat-header-info">
+      <h3 id="chat-modal-title">Converse com meu assistente</h3>
+      <p id="chat-modal-subtitle">Pergunte qualquer coisa sobre mim.</p>
+    </div>
+    <button class="chat-close-btn" onclick="closeChat()" aria-label="Fechar chat">✕</button>
+  </div>
+
+  <!-- Messages -->
+  <div class="chat-messages" id="chat-messages">
+    <!-- Bot greeting rendered by JS -->
+  </div>
+
+  <!-- Suggestions -->
+  <div id="chat-suggestions" class="chat-suggestions" style="padding: 0 16px 12px;">
+    <!-- Rendered by JS -->
+  </div>
+
+  <!-- Input -->
+  <div class="chat-input-area">
+    <input
+      type="text"
+      id="chat-input"
+      placeholder="Digite sua mensagem..."
+      autocomplete="off"
+      aria-label="Mensagem"
+    />
+    <button id="chat-send-btn" aria-label="Enviar mensagem">
+      <i class="fa fa-paper-plane" style="font-size:0.75rem;"></i>
+    </button>
+  </div>
+
+</div>
+
+<!-- ─── SCRIPTS ───────────────────────────────── -->
+<script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+{
+  "lang": "en",
+  "meta": {
+    "title": "Cristiano Souza — Senior Full Stack Developer",
+    "description": "Specialist in PHP, Node and automation with a focus on performance and scalability.",
+    "email": "cristiano@email.com",
+    "linkedin": "https://linkedin.com/in/cristiano-souza",
+    "github": "https://github.com/cristiano-souza",
+    "cv_url": "#"
+  },
+  "hero": {
+    "name": "CRISTIANO SOUZA",
+    "role": "Senior Full Stack Developer",
+    "bio": "Specialist in PHP, Node and automation with a focus on performance and scalability.",
+    "cta_projects": "View Projects",
+    "cta_cv": "View CV",
+    "cta_contact": "Contact",
+    "photo": "assets/photo.jpg"
+  },
+  "stack": {
+    "title": "My Stack",
+    "categories": [
+      {
+        "label": "Languages",
+        "items": [
+          { "name": "PHP", "icon": "devicon-php-plain", "color": "#777BB4" },
+          { "name": "JavaScript", "icon": "devicon-javascript-plain", "color": "#F7DF1E" },
+          { "name": "TypeScript", "icon": "devicon-typescript-plain", "color": "#3178C6" }
+        ]
+      },
+      {
+        "label": "Back-end",
+        "items": [
+          { "name": "Node.js", "icon": "devicon-nodejs-plain", "color": "#339933" },
+          { "name": "Laravel", "icon": "devicon-laravel-plain", "color": "#FF2D20" },
+          { "name": "n8n", "icon": null, "color": "#EA4B71", "text": "n8n" }
+        ]
+      },
+      {
+        "label": "Databases",
+        "items": [
+          { "name": "PostgreSQL", "icon": "devicon-postgresql-plain", "color": "#4169E1" },
+          { "name": "MySQL", "icon": "devicon-mysql-plain", "color": "#4479A1" },
+          { "name": "Redis", "icon": "devicon-redis-plain", "color": "#DC382D" }
+        ]
+      },
+      {
+        "label": "DevOps",
+        "items": [
+          { "name": "Docker", "icon": "devicon-docker-plain", "color": "#2496ED" },
+          { "name": "Git", "icon": "devicon-git-plain", "color": "#F05032" },
+          { "name": "Linux", "icon": "devicon-linux-plain", "color": "#FCC624" }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "cta_more": "More Projects",
+    "items": [
+      {
+        "id": 1,
+        "title": "Automation Application",
+        "stack": ["Node.js", "n8n", "Docker"],
+        "stack_label": "Stack",
+        "achievements": [
+          "Reduced processing time by 30%",
+          "Implemented automations with n8n"
+        ],
+        "gradient": "neon-green",
+        "icon": "⚡"
+      },
+      {
+        "id": 2,
+        "title": "Analytics Dashboard",
+        "stack": ["PHP", "Laravel", "PostgreSQL"],
+        "stack_label": "Stack",
+        "achievements": [
+          "Real-time data with 60% better retention",
+          "Advanced cache for performance scaling"
+        ],
+        "gradient": "neon-purple",
+        "icon": "📊"
+      },
+      {
+        "id": 3,
+        "title": "Database Architecture",
+        "stack": ["PostgreSQL", "MySQL", "Docker"],
+        "stack_label": "Data",
+        "achievements": [
+          "Built a REST API used by 50,000 users",
+          "Performance improvement in production"
+        ],
+        "gradient": "neon-cyan",
+        "icon": "🗄️"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "items": [
+      {
+        "role": "Full Stack Developer",
+        "company": "Company X",
+        "period": "2022 - Present",
+        "achievements": [
+          "Reduced processing time by 40%",
+          "Implemented automations with n8n"
+        ]
+      },
+      {
+        "role": "Backend Developer",
+        "company": "Company Y",
+        "period": "2020 - 2022",
+        "achievements": [
+          "Built a REST API used by 50,000 users",
+          "Complex integrations with third-party systems"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills & Differentials",
+    "items": [
+      "Good team communication",
+      "Experience with agile methodologies",
+      "Focus on performance and scalability",
+      "Product mindset",
+      "Client-facing experience"
+    ]
+  },
+  "education": {
+    "title": "Academic background & complementary experience",
+    "items": [
+      {
+        "type": "degree",
+        "type_label": "Degree",
+        "course": "B.Sc. in Information Systems",
+        "institution": "Example University",
+        "period": "2015 - 2019",
+        "details": "Strong foundation in web development, databases and software engineering."
+      },
+      {
+        "type": "certificate",
+        "type_label": "Certification",
+        "course": "Full Stack Web Development Specialization",
+        "institution": "Online Platform",
+        "period": "2021",
+        "details": "Training focused on modern applications with PHP, Node.js and front-end.",
+        "certificates": [
+          "Completion certificate — REST APIs with Laravel",
+          "Completion certificate — Workflow automation with n8n"
+        ]
+      },
+      {
+        "type": "extra",
+        "type_label": "Complementary",
+        "course": "Additional courses and workshops",
+        "institution": "",
+        "period": "",
+        "details": "Space to list certificates in Docker, DevOps, databases and other complementary training.",
+        "certificates": [
+          "Certificates in Docker and containers",
+          "Trainings in databases and performance optimization"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's talk",
+    "subtitle": "Let's work together? Get in touch and let's chat!",
+    "cta": "Get in Touch"
+  },
+  "ai_chat": {
+    "trigger_label": "Ask about Cristiano",
+    "title": "Chat with my assistant",
+    "subtitle": "Ask my AI assistant anything about me.",
+    "greeting": "Hi! I'm **Cristiano Souza**'s personal assistant. How can I help you?",
+    "placeholder": "Type your message...",
+    "suggestions": [
+      "What technologies does he master?",
+      "What projects has he done?",
+      "Does he have Docker experience?",
+      "Has he worked with integrations?",
+      "How can I contact him?"
+    ]
+  },
+  "nav": {
+    "links": [
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Education", "href": "#education" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Contact", "href": "#contact" }
+    ]
+  }
+}

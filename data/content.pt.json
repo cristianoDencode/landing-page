@@ -1,0 +1,273 @@
+{
+  "lang": "pt",
+  "meta": {
+    "title": "Cristiano Souza — Desenvolvedor Full Stack Pleno",
+    "description": "Especialista em PHP, Node e automações com foco em performance e escalabilidade.",
+    "email": "cristiano@email.com",
+    "linkedin": "https://linkedin.com/in/cristiano-souza",
+    "github": "https://github.com/cristiano-souza",
+    "cv_url": "#"
+  },
+  "hero": {
+    "name": "CRISTIANO SOUZA",
+    "role": "Desenvolvedor Full Stack Pleno",
+    "bio": "Especialista em PHP, Node e automações com foco em performance e escalabilidade.",
+    "cta_projects": "Ver Projetos",
+    "cta_cv": "Ver CV",
+    "cta_contact": "Contato",
+    "photo": "assets/photo.png"
+  },
+  "stack": {
+    "title": "Minha Stack",
+    "categories": [
+      {
+        "label": "Linguagens",
+        "items": [
+          {
+            "name": "PHP",
+            "icon": "devicon-php-plain",
+            "color": "#777BB4"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "devicon-javascript-plain",
+            "color": "#F7DF1E"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "devicon-typescript-plain",
+            "color": "#3178C6"
+          }
+        ]
+      },
+      {
+        "label": "Back-end",
+        "items": [
+          {
+            "name": "Node.js",
+            "icon": "devicon-nodejs-plain",
+            "color": "#339933"
+          },
+          {
+            "name": "Laravel",
+            "icon": "devicon-laravel-plain",
+            "color": "#FF2D20"
+          },
+          {
+            "name": "n8n",
+            "icon": null,
+            "color": "#EA4B71",
+            "text": "n8n"
+          }
+        ]
+      },
+      {
+        "label": "Banco de Dados",
+        "items": [
+          {
+            "name": "PostgreSQL",
+            "icon": "devicon-postgresql-plain",
+            "color": "#4169E1"
+          },
+          {
+            "name": "MySQL",
+            "icon": "devicon-mysql-plain",
+            "color": "#4479A1"
+          },
+          {
+            "name": "Redis",
+            "icon": "devicon-redis-plain",
+            "color": "#DC382D"
+          }
+        ]
+      },
+      {
+        "label": "DevOps",
+        "items": [
+          {
+            "name": "Docker",
+            "icon": "devicon-docker-plain",
+            "color": "#2496ED"
+          },
+          {
+            "name": "Git",
+            "icon": "devicon-git-plain",
+            "color": "#F05032"
+          },
+          {
+            "name": "Linux",
+            "icon": "devicon-linux-plain",
+            "color": "#FCC624"
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projetos em Destaque",
+    "cta_more": "Outros Projetos",
+    "items": [
+      {
+        "id": 1,
+        "title": "Aplicação de Automação",
+        "stack": [
+          "Node.js",
+          "n8n",
+          "Docker"
+        ],
+        "stack_label": "Stack",
+        "achievements": [
+          "Reduzi o tempo de processamento em 30%",
+          "Implementei automações com n8n"
+        ],
+        "gradient": "neon-green",
+        "icon": "⚡"
+      },
+      {
+        "id": 2,
+        "title": "Dashboard Analítica",
+        "stack": [
+          "PHP",
+          "Laravel",
+          "PostgreSQL"
+        ],
+        "stack_label": "Stack",
+        "achievements": [
+          "Banco em tempo real com retenção em 60%",
+          "Escala de retenção com cache avançado"
+        ],
+        "gradient": "neon-purple",
+        "icon": "📊"
+      },
+      {
+        "id": 3,
+        "title": "Banco de Dados",
+        "stack": [
+          "PostgreSQL",
+          "MySQL",
+          "Docker"
+        ],
+        "stack_label": "Dados",
+        "achievements": [
+          "Desenvolvi uma API REST utilizada por 50 mil usuários",
+          "Melhora de performance em produção"
+        ],
+        "gradient": "neon-cyan",
+        "icon": "🗄️"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiência Profissional",
+    "items": [
+      {
+        "role": "Desenvolvedor Full Stack",
+        "company": "Empresa X",
+        "period": "2022 - Atual",
+        "achievements": [
+          "Reduzi o tempo de processamento em 40%",
+          "Implementei automações com n8n"
+        ]
+      },
+      {
+        "role": "Desenvolvedor Backend",
+        "company": "Empresa Y",
+        "period": "2020 - 2022",
+        "achievements": [
+          "Desenvolvi uma API REST utilizada por 50 mil usuários",
+          "Integrações complexas com sistemas terceiros"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades e Diferenciais",
+    "items": [
+      "Boa comunicação com equipe",
+      "Experiência com metodologias ágeis",
+      "Foco em performance e escalabilidade",
+      "Mentalidade de produto",
+      "Experiência com clientes"
+    ]
+  },
+  "education": {
+    "title": "Formação acadêmica & experiências complementares",
+    "items": [
+      {
+        "type": "degree",
+        "type_label": "Graduação",
+        "course": "Bacharelado em Sistemas de Informação",
+        "institution": "Universidade Exemplo",
+        "period": "2015 - 2019",
+        "details": "Base sólida em desenvolvimento web, bancos de dados e engenharia de software."
+      },
+      {
+        "type": "certificate",
+        "type_label": "Certificação",
+        "course": "Especialização em Desenvolvimento Web Full Stack",
+        "institution": "Plataforma Online",
+        "period": "2021",
+        "details": "Formação focada em aplicações modernas com PHP, Node.js e front-end.",
+        "certificates": [
+          "Certificado de conclusão — APIs REST com Laravel",
+          "Certificado de conclusão — Automação de processos com n8n"
+        ]
+      },
+      {
+        "type": "extra",
+        "type_label": "Complementar",
+        "course": "Cursos e workshops adicionais",
+        "institution": "",
+        "period": "",
+        "details": "Espaço para listar certificados em Docker, DevOps, bancos de dados e outras formações complementares.",
+        "certificates": [
+          "Certificados em Docker e containers",
+          "Treinamentos em bancos de dados e otimização de performance"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Vamos conversar",
+    "subtitle": "Vamos trabalhar juntos? Entre em contato e vamos conversar!",
+    "cta": "Entre em Contato"
+  },
+  "ai_chat": {
+    "trigger_label": "Pergunte sobre o Cristiano",
+    "title": "Converse com meu assistente",
+    "subtitle": "Pergunte ao meu assistente de IA qualquer coisa sobre mim.",
+    "greeting": "Olá! Eu sou o assistente pessoal do **Cristiano Souza**. Em que posso te ajudar?",
+    "placeholder": "Digite sua mensagem...",
+    "suggestions": [
+      "Quais tecnologias ele domina?",
+      "Quais projetos ele já fez?",
+      "Ele tem experiência com Docker?",
+      "Já trabalhou com integrações?",
+      "Como posso entrar em contato?"
+    ]
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Projetos",
+        "href": "#projects"
+      },
+      {
+        "label": "Experiência",
+        "href": "#experience"
+      },
+      {
+        "label": "Formação",
+        "href": "#education"
+      },
+      {
+        "label": "Habilidades",
+        "href": "#experience"
+      },
+      {
+        "label": "Contato",
+        "href": "#contact"
+      }
+    ]
+  }
+}
