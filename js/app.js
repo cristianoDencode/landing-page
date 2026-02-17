@@ -211,37 +211,199 @@ function renderSkills() {
   `).join('');
 }
 
-// ─── EDUCATION & CERTIFICATIONS ────────────────────────────────────────────────
+// ─── EDUCATION TIMELINE ───────────────────────────────────────────────────────
+// JSON structure expected:
+// education.timeline = [
+//   { year, color, type?, achievements: [{ icon, type, title, institution, details, tags }] }
+// ]
+
+let _tlIndex = 0;          // active year-node index
+let _achIndex = 0;         // active achievement index within the year
 
 function renderEducation() {
   const { education } = data;
   if (!education) return;
 
   setText('education-title', education.title);
+  _tlIndex  = 0;
+  _achIndex = 0;
+
+  const years = education.timeline || [];
+  if (!years.length) return;
 
   const container = document.getElementById('education-list');
   if (!container) return;
 
-  container.innerHTML = education.items.map(item => `
-    <div class="edu-card">
-      <div class="edu-header">
-        <span class="edu-type">${item.type_label || item.type || ''}</span>
-        ${item.period ? `<span class="edu-period">${item.period}</span>` : ''}
-      </div>
-      <div class="edu-main">
-        <div class="edu-course">${item.course || item.label || ''}</div>
-        ${item.institution ? `<div class="edu-institution">${item.institution}</div>` : ''}
-      </div>
-      ${item.details ? `<p class="edu-details">${item.details}</p>` : ''}
-      ${item.certificates && item.certificates.length
-        ? `<ul class="edu-cert-list">
-            ${item.certificates.map(c => `<li><span class="check-icon">✓</span>${c}</li>`).join('')}
-          </ul>`
-        : ''
-      }
+  // ── Year nodes on the rail ──────────────────────────────────────────────────
+  const nodes = years.map((yr, i) => {
+    const c        = tlColor(yr.color);
+    const isFuture = yr.type === 'future';
+    const count    = yr.achievements?.length || 0;
+    const badge    = count > 1 ? `<span class="tl-node-badge">${count}</span>` : '';
+    return `
+      <div class="tl-node${isFuture ? ' tl-node--future' : ''}"
+           data-index="${i}" style="--node-color:${c}"
+           onclick="tlGoTo(${i},0)" role="button" tabindex="0"
+           aria-label="${yr.year}: ${count} conquista${count !== 1 ? 's' : ''}">
+        <div class="tl-node-dot">
+          <span class="tl-node-icon">${yr.achievements?.[0]?.icon || '📌'}</span>
+          ${badge}
+        </div>
+        <span class="tl-node-year">${yr.year}</span>
+      </div>`;
+  }).join('');
+
+  container.innerHTML = `
+    <div class="tl-rail-wrap">
+      <div class="tl-line"></div>
+      <div class="tl-nodes" id="tl-nodes">${nodes}</div>
     </div>
-  `).join('');
+
+    <div class="tl-detail" id="tl-detail">
+      <button class="tl-arrow tl-arrow--left"  id="tl-prev" onclick="tlNav(-1)" aria-label="Anterior">&#8592;</button>
+      <div class="tl-card-wrap" id="tl-card-wrap"></div>
+      <button class="tl-arrow tl-arrow--right" id="tl-next" onclick="tlNav(1)"  aria-label="Próximo">&#8594;</button>
+    </div>`;
+
+  tlGoTo(0, 0);
+
+  // keyboard support
+  container.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') tlNav(1);
+    if (e.key === 'ArrowLeft')  tlNav(-1);
+  });
 }
+
+// ── Navigate year nodes (dir = ±1 over ALL achievements across years) ──────────
+function tlNav(dir) {
+  const years = data?.education?.timeline;
+  if (!years) return;
+
+  const yr  = years[_tlIndex];
+  const len = yr.achievements?.length || 1;
+
+  // try to move within current year's achievements first
+  const nextAch = _achIndex + dir;
+  if (nextAch >= 0 && nextAch < len) {
+    tlGoTo(_tlIndex, nextAch);
+  } else {
+    // move to adjacent year
+    const nextYear = _tlIndex + dir;
+    if (nextYear >= 0 && nextYear < years.length) {
+      // land on last achievement when going left, first when going right
+      const landAch = dir > 0 ? 0 : (years[nextYear].achievements?.length || 1) - 1;
+      tlGoTo(nextYear, landAch);
+    }
+  }
+}
+
+// ── Go to a specific year node + achievement index ──────────────────────────────
+function tlGoTo(yearIndex, achIndex = 0) {
+  const years = data?.education?.timeline;
+  if (!years) return;
+
+  _tlIndex  = Math.max(0, Math.min(yearIndex, years.length - 1));
+  const yr  = years[_tlIndex];
+  const len = yr.achievements?.length || 1;
+  _achIndex = Math.max(0, Math.min(achIndex, len - 1));
+
+  // ── update rail nodes ──
+  document.querySelectorAll('.tl-node').forEach((n, i) =>
+    n.classList.toggle('active', i === _tlIndex)
+  );
+
+  // ── update arrows: disabled only at absolute ends ──
+  const isFirstYear = _tlIndex === 0;
+  const isLastYear  = _tlIndex === years.length - 1;
+  const prev = document.getElementById('tl-prev');
+  const next = document.getElementById('tl-next');
+  if (prev) prev.disabled = isFirstYear && _achIndex === 0;
+  if (next) next.disabled = isLastYear  && _achIndex === len - 1;
+
+  // ── render card ──
+  tlRenderCard(yr, _achIndex);
+
+  // scroll active node into view on mobile
+  const activeNode = document.querySelector('.tl-node.active');
+  if (activeNode) activeNode.scrollIntoView({ behavior:'smooth', block:'nearest', inline:'center' });
+}
+
+// ── Render the detail card for a year + achievement ────────────────────────────
+function tlRenderCard(yr, achIdx) {
+  const wrap = document.getElementById('tl-card-wrap');
+  if (!wrap) return;
+
+  const c        = tlColor(yr.color);
+  const isFuture = yr.type === 'future';
+  const ach      = yr.achievements?.[achIdx] || {};
+  const years    = data?.education?.timeline || [];
+  const totalAch = yr.achievements?.length || 1;
+
+  // ── achievement sub-nav dots (within this year) ──
+  const achDots = totalAch > 1
+    ? `<div class="tl-ach-nav">
+        ${yr.achievements.map((a, i) => `
+          <button class="tl-ach-dot${i === achIdx ? ' active' : ''}"
+                  style="${i === achIdx ? '--dot-color:'+c : ''}"
+                  onclick="tlGoTo(${_tlIndex},${i})"
+                  aria-label="${a.title}">
+          </button>`).join('')}
+       </div>`
+    : '';
+
+  // ── year progress bar across all year nodes ──
+  const yearDots = years.map((y, i) => {
+    const yc = tlColor(y.color);
+    return `<span class="tl-dot${i === _tlIndex ? ' active' : ''}"
+                  style="${i === _tlIndex ? '--dot-color:'+yc : ''}"
+                  onclick="tlGoTo(${i},0)"
+                  title="${y.year}"></span>`;
+  }).join('');
+
+  wrap.innerHTML = `
+    <div class="tl-card${isFuture ? ' tl-card--future' : ''}" style="--card-color:${c}">
+
+      <div class="tl-card-top">
+        <span class="tl-card-icon">${ach.icon || '📌'}</span>
+        <div class="tl-card-meta">
+          <span class="tl-card-year" style="color:${c}">${yr.year}</span>
+          <span class="tl-card-type">${ach.type || ''}</span>
+        </div>
+        ${isFuture ? `<span class="tl-future-badge">Em andamento</span>` : ''}
+        ${totalAch > 1 ? `<span class="tl-count-badge" style="border-color:${c};color:${c}">${achIdx + 1}/${totalAch}</span>` : ''}
+      </div>
+
+      <h3 class="tl-card-title">${ach.title || ''}</h3>
+      ${ach.institution ? `<p class="tl-card-institution">🏛 ${ach.institution}</p>` : ''}
+      ${ach.details     ? `<p class="tl-card-details">${ach.details}</p>` : ''}
+
+      ${ach.tags?.length ? `
+        <div class="tl-card-tags">
+          ${ach.tags.map(t => `<span class="tl-tag" style="border-color:${c};color:${c}">${t}</span>`).join('')}
+        </div>` : ''}
+
+      ${achDots}
+
+      <div class="tl-card-progress">${yearDots}</div>
+    </div>`;
+
+  // fade-in animation
+  requestAnimationFrame(() => {
+    const card = wrap.querySelector('.tl-card');
+    if (!card) return;
+    card.style.cssText += 'opacity:0;transform:translateY(10px);';
+    requestAnimationFrame(() => {
+      card.style.cssText += 'transition:opacity .3s ease,transform .3s ease;opacity:1;transform:translateY(0);';
+    });
+  });
+}
+
+// ── Color helper ────────────────────────────────────────────────────────────────
+function tlColor(key) {
+  return { green:'var(--neon-green)', purple:'var(--neon-purple)', cyan:'var(--neon-cyan)' }[key]
+      || 'var(--neon-green)';
+}
+
 
 // ─── CONTACT ──────────────────────────────────────────────────────────────────
 

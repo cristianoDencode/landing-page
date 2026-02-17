@@ -191,38 +191,133 @@
     ]
   },
   "education": {
-    "title": "Formação acadêmica & experiências complementares",
-    "items": [
+    "title": "Formação & Trajetória",
+    "timeline": [
       {
-        "type": "degree",
-        "type_label": "Graduação",
-        "course": "Bacharelado em Sistemas de Informação",
-        "institution": "Universidade Exemplo",
-        "period": "2015 - 2019",
-        "details": "Base sólida em desenvolvimento web, bancos de dados e engenharia de software."
-      },
-      {
-        "type": "certificate",
-        "type_label": "Certificação",
-        "course": "Especialização em Desenvolvimento Web Full Stack",
-        "institution": "Plataforma Online",
-        "period": "2021",
-        "details": "Formação focada em aplicações modernas com PHP, Node.js e front-end.",
-        "certificates": [
-          "Certificado de conclusão — APIs REST com Laravel",
-          "Certificado de conclusão — Automação de processos com n8n"
+        "year": "2009",
+        "color": "green",
+        "achievements": [
+          {
+            "icon": "🎓",
+            "type": "Graduação",
+            "title": "Bacharelado em Fisioterapia",
+            "institution": "Universidade Exemplo",
+            "details": "Base clínica em reabilitação, anatomia funcional e atendimento de pacientes.",
+            "tags": [
+              "Fisioterapia",
+              "Reabilitação",
+              "Clínica"
+            ]
+          }
         ]
       },
       {
-        "type": "extra",
-        "type_label": "Complementar",
-        "course": "Cursos e workshops adicionais",
-        "institution": "",
-        "period": "",
-        "details": "Espaço para listar certificados em Docker, DevOps, bancos de dados e outras formações complementares.",
-        "certificates": [
-          "Certificados em Docker e containers",
-          "Treinamentos em bancos de dados e otimização de performance"
+        "year": "2010",
+        "color": "purple",
+        "achievements": [
+          {
+            "icon": "📜",
+            "type": "Especialização",
+            "title": "Especialização em RPG",
+            "institution": "Instituto de Posturologia",
+            "details": "Equilíbrio postural e terapias de reeducação postural global.",
+            "tags": [
+              "Postura",
+              "RPG",
+              "Terapia Manual"
+            ]
+          },
+          {
+            "icon": "📜",
+            "type": "Certificado",
+            "title": "Certificação em Pilates Clínico",
+            "institution": "Centro de Pilates Avançado",
+            "details": "Técnicas avançadas de Pilates aplicadas à reabilitação e prevenção de lesões.",
+            "tags": [
+              "Pilates",
+              "Core",
+              "Prevenção"
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2022",
+        "color": "cyan",
+        "achievements": [
+          {
+            "icon": "🎓",
+            "type": "Pós-Graduação",
+            "title": "Pós-Graduação em Acupuntura",
+            "institution": "Escola de Medicina Integrativa",
+            "details": "Estudo e prática em técnicas de acupuntura, meridianos e energias vitais.",
+            "tags": [
+              "Acupuntura",
+              "Medicina Integrativa",
+              "Energias"
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2024",
+        "color": "green",
+        "achievements": [
+          {
+            "icon": "💻",
+            "type": "Graduação",
+            "title": "Análise e Desenvolvimento de Sistemas",
+            "institution": "Faculdade de Tecnologia",
+            "details": "Desenvolvimento de software com foco em aplicações web, APIs e bancos de dados.",
+            "tags": [
+              "Programação",
+              "Banco de Dados",
+              "Software"
+            ]
+          },
+          {
+            "icon": "📜",
+            "type": "Certificado",
+            "title": "Desenvolvimento Web Full Stack",
+            "institution": "Plataforma Online",
+            "details": "Formação em PHP, Node.js, Laravel e front-end moderno.",
+            "tags": [
+              "PHP",
+              "Node.js",
+              "Laravel"
+            ]
+          },
+          {
+            "icon": "🏆",
+            "type": "Certificado",
+            "title": "Automação com n8n",
+            "institution": "Plataforma Online",
+            "details": "Criação de workflows automatizados e integrações via n8n.",
+            "tags": [
+              "n8n",
+              "Automação",
+              "Integrações"
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2027",
+        "color": "purple",
+        "type": "future",
+        "achievements": [
+          {
+            "icon": "🚀",
+            "type": "Meta",
+            "title": "Engenharia de Software",
+            "institution": "Em andamento",
+            "details": "Especialização em arquitetura de sistemas, DevOps e escalabilidade em cloud.",
+            "tags": [
+              "DevOps",
+              "Arquitetura",
+              "Cloud"
+            ]
+          }
         ]
       }
     ]

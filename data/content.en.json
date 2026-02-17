@@ -23,33 +23,82 @@
       {
         "label": "Languages",
         "items": [
-          { "name": "PHP", "icon": "devicon-php-plain", "color": "#777BB4" },
-          { "name": "JavaScript", "icon": "devicon-javascript-plain", "color": "#F7DF1E" },
-          { "name": "TypeScript", "icon": "devicon-typescript-plain", "color": "#3178C6" }
+          {
+            "name": "PHP",
+            "icon": "devicon-php-plain",
+            "color": "#777BB4"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "devicon-javascript-plain",
+            "color": "#F7DF1E"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "devicon-typescript-plain",
+            "color": "#3178C6"
+          }
         ]
       },
       {
         "label": "Back-end",
         "items": [
-          { "name": "Node.js", "icon": "devicon-nodejs-plain", "color": "#339933" },
-          { "name": "Laravel", "icon": "devicon-laravel-plain", "color": "#FF2D20" },
-          { "name": "n8n", "icon": null, "color": "#EA4B71", "text": "n8n" }
+          {
+            "name": "Node.js",
+            "icon": "devicon-nodejs-plain",
+            "color": "#339933"
+          },
+          {
+            "name": "Laravel",
+            "icon": "devicon-laravel-plain",
+            "color": "#FF2D20"
+          },
+          {
+            "name": "n8n",
+            "icon": null,
+            "color": "#EA4B71",
+            "text": "n8n"
+          }
         ]
       },
       {
         "label": "Databases",
         "items": [
-          { "name": "PostgreSQL", "icon": "devicon-postgresql-plain", "color": "#4169E1" },
-          { "name": "MySQL", "icon": "devicon-mysql-plain", "color": "#4479A1" },
-          { "name": "Redis", "icon": "devicon-redis-plain", "color": "#DC382D" }
+          {
+            "name": "PostgreSQL",
+            "icon": "devicon-postgresql-plain",
+            "color": "#4169E1"
+          },
+          {
+            "name": "MySQL",
+            "icon": "devicon-mysql-plain",
+            "color": "#4479A1"
+          },
+          {
+            "name": "Redis",
+            "icon": "devicon-redis-plain",
+            "color": "#DC382D"
+          }
         ]
       },
       {
         "label": "DevOps",
         "items": [
-          { "name": "Docker", "icon": "devicon-docker-plain", "color": "#2496ED" },
-          { "name": "Git", "icon": "devicon-git-plain", "color": "#F05032" },
-          { "name": "Linux", "icon": "devicon-linux-plain", "color": "#FCC624" }
+          {
+            "name": "Docker",
+            "icon": "devicon-docker-plain",
+            "color": "#2496ED"
+          },
+          {
+            "name": "Git",
+            "icon": "devicon-git-plain",
+            "color": "#F05032"
+          },
+          {
+            "name": "Linux",
+            "icon": "devicon-linux-plain",
+            "color": "#FCC624"
+          }
         ]
       }
     ]
@@ -61,7 +110,11 @@
       {
         "id": 1,
         "title": "Automation Application",
-        "stack": ["Node.js", "n8n", "Docker"],
+        "stack": [
+          "Node.js",
+          "n8n",
+          "Docker"
+        ],
         "stack_label": "Stack",
         "achievements": [
           "Reduced processing time by 30%",
@@ -73,7 +126,11 @@
       {
         "id": 2,
         "title": "Analytics Dashboard",
-        "stack": ["PHP", "Laravel", "PostgreSQL"],
+        "stack": [
+          "PHP",
+          "Laravel",
+          "PostgreSQL"
+        ],
         "stack_label": "Stack",
         "achievements": [
           "Real-time data with 60% better retention",
@@ -85,7 +142,11 @@
       {
         "id": 3,
         "title": "Database Architecture",
-        "stack": ["PostgreSQL", "MySQL", "Docker"],
+        "stack": [
+          "PostgreSQL",
+          "MySQL",
+          "Docker"
+        ],
         "stack_label": "Data",
         "achievements": [
           "Built a REST API used by 50,000 users",
@@ -130,38 +191,133 @@
     ]
   },
   "education": {
-    "title": "Academic background & complementary experience",
-    "items": [
+    "title": "Education & Journey",
+    "timeline": [
       {
-        "type": "degree",
-        "type_label": "Degree",
-        "course": "B.Sc. in Information Systems",
-        "institution": "Example University",
-        "period": "2015 - 2019",
-        "details": "Strong foundation in web development, databases and software engineering."
-      },
-      {
-        "type": "certificate",
-        "type_label": "Certification",
-        "course": "Full Stack Web Development Specialization",
-        "institution": "Online Platform",
-        "period": "2021",
-        "details": "Training focused on modern applications with PHP, Node.js and front-end.",
-        "certificates": [
-          "Completion certificate — REST APIs with Laravel",
-          "Completion certificate — Workflow automation with n8n"
+        "year": "2009",
+        "color": "green",
+        "achievements": [
+          {
+            "icon": "🎓",
+            "type": "Degree",
+            "title": "B.Sc. in Physical Therapy",
+            "institution": "Example University",
+            "details": "Clinical foundation in rehabilitation, functional anatomy and patient care.",
+            "tags": [
+              "Physical Therapy",
+              "Rehabilitation",
+              "Clinical"
+            ]
+          }
         ]
       },
       {
-        "type": "extra",
-        "type_label": "Complementary",
-        "course": "Additional courses and workshops",
-        "institution": "",
-        "period": "",
-        "details": "Space to list certificates in Docker, DevOps, databases and other complementary training.",
-        "certificates": [
-          "Certificates in Docker and containers",
-          "Trainings in databases and performance optimization"
+        "year": "2010",
+        "color": "purple",
+        "achievements": [
+          {
+            "icon": "📜",
+            "type": "Specialization",
+            "title": "RPG Postural Therapy",
+            "institution": "Institute of Posturology",
+            "details": "Postural balance and global postural reeducation therapies.",
+            "tags": [
+              "Posture",
+              "RPG",
+              "Manual Therapy"
+            ]
+          },
+          {
+            "icon": "📜",
+            "type": "Certificate",
+            "title": "Clinical Pilates Certification",
+            "institution": "Advanced Pilates Center",
+            "details": "Advanced Pilates techniques applied to rehabilitation and injury prevention.",
+            "tags": [
+              "Pilates",
+              "Core",
+              "Prevention"
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2022",
+        "color": "cyan",
+        "achievements": [
+          {
+            "icon": "🎓",
+            "type": "Post-Grad",
+            "title": "Post-Grad in Acupuncture",
+            "institution": "Integrative Medicine School",
+            "details": "Study and practice in acupuncture techniques, meridians and vital energies.",
+            "tags": [
+              "Acupuncture",
+              "Integrative Medicine",
+              "Energy"
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2024",
+        "color": "green",
+        "achievements": [
+          {
+            "icon": "💻",
+            "type": "Degree",
+            "title": "Systems Analysis & Development",
+            "institution": "Technology College",
+            "details": "Software development focused on web apps, APIs and databases.",
+            "tags": [
+              "Programming",
+              "Databases",
+              "Software"
+            ]
+          },
+          {
+            "icon": "📜",
+            "type": "Certificate",
+            "title": "Full Stack Web Development",
+            "institution": "Online Platform",
+            "details": "Training in PHP, Node.js, Laravel and modern front-end.",
+            "tags": [
+              "PHP",
+              "Node.js",
+              "Laravel"
+            ]
+          },
+          {
+            "icon": "🏆",
+            "type": "Certificate",
+            "title": "Automation with n8n",
+            "institution": "Online Platform",
+            "details": "Creating automated workflows and integrations via n8n.",
+            "tags": [
+              "n8n",
+              "Automation",
+              "Integrations"
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2027",
+        "color": "purple",
+        "type": "future",
+        "achievements": [
+          {
+            "icon": "🚀",
+            "type": "Goal",
+            "title": "Software Engineering",
+            "institution": "In progress",
+            "details": "Specialization in system architecture, DevOps and cloud scalability.",
+            "tags": [
+              "DevOps",
+              "Architecture",
+              "Cloud"
+            ]
+          }
         ]
       }
     ]
@@ -187,11 +343,26 @@
   },
   "nav": {
     "links": [
-      { "label": "Projects", "href": "#projects" },
-      { "label": "Experience", "href": "#experience" },
-      { "label": "Education", "href": "#education" },
-      { "label": "Skills", "href": "#skills" },
-      { "label": "Contact", "href": "#contact" }
+      {
+        "label": "Projects",
+        "href": "#projects"
+      },
+      {
+        "label": "Experience",
+        "href": "#experience"
+      },
+      {
+        "label": "Education",
+        "href": "#education"
+      },
+      {
+        "label": "Skills",
+        "href": "#skills"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
     ]
   }
 }

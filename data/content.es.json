@@ -23,33 +23,82 @@
       {
         "label": "Lenguajes",
         "items": [
-          { "name": "PHP", "icon": "devicon-php-plain", "color": "#777BB4" },
-          { "name": "JavaScript", "icon": "devicon-javascript-plain", "color": "#F7DF1E" },
-          { "name": "TypeScript", "icon": "devicon-typescript-plain", "color": "#3178C6" }
+          {
+            "name": "PHP",
+            "icon": "devicon-php-plain",
+            "color": "#777BB4"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "devicon-javascript-plain",
+            "color": "#F7DF1E"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "devicon-typescript-plain",
+            "color": "#3178C6"
+          }
         ]
       },
       {
         "label": "Back-end",
         "items": [
-          { "name": "Node.js", "icon": "devicon-nodejs-plain", "color": "#339933" },
-          { "name": "Laravel", "icon": "devicon-laravel-plain", "color": "#FF2D20" },
-          { "name": "n8n", "icon": null, "color": "#EA4B71", "text": "n8n" }
+          {
+            "name": "Node.js",
+            "icon": "devicon-nodejs-plain",
+            "color": "#339933"
+          },
+          {
+            "name": "Laravel",
+            "icon": "devicon-laravel-plain",
+            "color": "#FF2D20"
+          },
+          {
+            "name": "n8n",
+            "icon": null,
+            "color": "#EA4B71",
+            "text": "n8n"
+          }
         ]
       },
       {
         "label": "Bases de Datos",
         "items": [
-          { "name": "PostgreSQL", "icon": "devicon-postgresql-plain", "color": "#4169E1" },
-          { "name": "MySQL", "icon": "devicon-mysql-plain", "color": "#4479A1" },
-          { "name": "Redis", "icon": "devicon-redis-plain", "color": "#DC382D" }
+          {
+            "name": "PostgreSQL",
+            "icon": "devicon-postgresql-plain",
+            "color": "#4169E1"
+          },
+          {
+            "name": "MySQL",
+            "icon": "devicon-mysql-plain",
+            "color": "#4479A1"
+          },
+          {
+            "name": "Redis",
+            "icon": "devicon-redis-plain",
+            "color": "#DC382D"
+          }
         ]
       },
       {
         "label": "DevOps",
         "items": [
-          { "name": "Docker", "icon": "devicon-docker-plain", "color": "#2496ED" },
-          { "name": "Git", "icon": "devicon-git-plain", "color": "#F05032" },
-          { "name": "Linux", "icon": "devicon-linux-plain", "color": "#FCC624" }
+          {
+            "name": "Docker",
+            "icon": "devicon-docker-plain",
+            "color": "#2496ED"
+          },
+          {
+            "name": "Git",
+            "icon": "devicon-git-plain",
+            "color": "#F05032"
+          },
+          {
+            "name": "Linux",
+            "icon": "devicon-linux-plain",
+            "color": "#FCC624"
+          }
         ]
       }
     ]
@@ -61,7 +110,11 @@
       {
         "id": 1,
         "title": "Aplicación de Automatización",
-        "stack": ["Node.js", "n8n", "Docker"],
+        "stack": [
+          "Node.js",
+          "n8n",
+          "Docker"
+        ],
         "stack_label": "Stack",
         "achievements": [
           "Reduje el tiempo de procesamiento en un 30%",
@@ -73,7 +126,11 @@
       {
         "id": 2,
         "title": "Dashboard Analítico",
-        "stack": ["PHP", "Laravel", "PostgreSQL"],
+        "stack": [
+          "PHP",
+          "Laravel",
+          "PostgreSQL"
+        ],
         "stack_label": "Stack",
         "achievements": [
           "Datos en tiempo real con 60% más retención",
@@ -85,7 +142,11 @@
       {
         "id": 3,
         "title": "Base de Datos",
-        "stack": ["PostgreSQL", "MySQL", "Docker"],
+        "stack": [
+          "PostgreSQL",
+          "MySQL",
+          "Docker"
+        ],
         "stack_label": "Datos",
         "achievements": [
           "Desarrollé una API REST usada por 50 mil usuarios",
@@ -130,38 +191,133 @@
     ]
   },
   "education": {
-    "title": "Formación académica y experiencia complementaria",
-    "items": [
+    "title": "Formación & Trayectoria",
+    "timeline": [
       {
-        "type": "degree",
-        "type_label": "Grado",
-        "course": "Licenciatura en Sistemas de Información",
-        "institution": "Universidad Ejemplo",
-        "period": "2015 - 2019",
-        "details": "Base sólida en desarrollo web, bases de datos e ingeniería de software."
-      },
-      {
-        "type": "certificate",
-        "type_label": "Certificación",
-        "course": "Especialización en Desarrollo Web Full Stack",
-        "institution": "Plataforma Online",
-        "period": "2021",
-        "details": "Formación enfocada en aplicaciones modernas con PHP, Node.js y front-end.",
-        "certificates": [
-          "Certificado de finalización — APIs REST con Laravel",
-          "Certificado de finalización — Automatización de procesos con n8n"
+        "year": "2009",
+        "color": "green",
+        "achievements": [
+          {
+            "icon": "🎓",
+            "type": "Grado",
+            "title": "Licenciatura en Fisioterapia",
+            "institution": "Universidad Ejemplo",
+            "details": "Base clínica en rehabilitación, anatomía funcional y atención al paciente.",
+            "tags": [
+              "Fisioterapia",
+              "Rehabilitación",
+              "Clínica"
+            ]
+          }
         ]
       },
       {
-        "type": "extra",
-        "type_label": "Complementaria",
-        "course": "Cursos y workshops adicionales",
-        "institution": "",
-        "period": "",
-        "details": "Espacio para listar certificados en Docker, DevOps, bases de datos y otras formaciones complementarias.",
-        "certificates": [
-          "Certificados en Docker y contenedores",
-          "Capacitaciones en bases de datos y optimización de rendimiento"
+        "year": "2010",
+        "color": "purple",
+        "achievements": [
+          {
+            "icon": "📜",
+            "type": "Especialización",
+            "title": "Especialización en RPG",
+            "institution": "Instituto de Posturología",
+            "details": "Equilibrio postural y terapias de reeducación postural global.",
+            "tags": [
+              "Postura",
+              "RPG",
+              "Terapia Manual"
+            ]
+          },
+          {
+            "icon": "📜",
+            "type": "Certificado",
+            "title": "Certificación en Pilates Clínico",
+            "institution": "Centro de Pilates Avanzado",
+            "details": "Técnicas avanzadas de Pilates aplicadas a rehabilitación y prevención.",
+            "tags": [
+              "Pilates",
+              "Core",
+              "Prevención"
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2022",
+        "color": "cyan",
+        "achievements": [
+          {
+            "icon": "🎓",
+            "type": "Posgrado",
+            "title": "Posgrado en Acupuntura",
+            "institution": "Escuela de Medicina Integrativa",
+            "details": "Estudio y práctica en acupuntura, meridianos y energías vitales.",
+            "tags": [
+              "Acupuntura",
+              "Medicina Integrativa",
+              "Energía"
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2024",
+        "color": "green",
+        "achievements": [
+          {
+            "icon": "💻",
+            "type": "Grado",
+            "title": "Análisis y Desarrollo de Sistemas",
+            "institution": "Facultad de Tecnología",
+            "details": "Desarrollo de software con foco en apps web, APIs y bases de datos.",
+            "tags": [
+              "Programación",
+              "Bases de Datos",
+              "Software"
+            ]
+          },
+          {
+            "icon": "📜",
+            "type": "Certificado",
+            "title": "Desarrollo Web Full Stack",
+            "institution": "Plataforma Online",
+            "details": "Formación en PHP, Node.js, Laravel y front-end moderno.",
+            "tags": [
+              "PHP",
+              "Node.js",
+              "Laravel"
+            ]
+          },
+          {
+            "icon": "🏆",
+            "type": "Certificado",
+            "title": "Automatización con n8n",
+            "institution": "Plataforma Online",
+            "details": "Creación de flujos automatizados e integraciones con n8n.",
+            "tags": [
+              "n8n",
+              "Automatización",
+              "Integraciones"
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2027",
+        "color": "purple",
+        "type": "future",
+        "achievements": [
+          {
+            "icon": "🚀",
+            "type": "Meta",
+            "title": "Ingeniería de Software",
+            "institution": "En progreso",
+            "details": "Especialización en arquitectura de sistemas, DevOps y cloud.",
+            "tags": [
+              "DevOps",
+              "Arquitectura",
+              "Cloud"
+            ]
+          }
         ]
       }
     ]
@@ -187,11 +343,26 @@
   },
   "nav": {
     "links": [
-      { "label": "Proyectos", "href": "#projects" },
-      { "label": "Experiencia", "href": "#experience" },
-       { "label": "Formación", "href": "#education" },
-      { "label": "Habilidades", "href": "#skills" },
-      { "label": "Contacto", "href": "#contact" }
+      {
+        "label": "Proyectos",
+        "href": "#projects"
+      },
+      {
+        "label": "Experiencia",
+        "href": "#experience"
+      },
+      {
+        "label": "Formación",
+        "href": "#education"
+      },
+      {
+        "label": "Habilidades",
+        "href": "#skills"
+      },
+      {
+        "label": "Contacto",
+        "href": "#contact"
+      }
     ]
   }
 }
