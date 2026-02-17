@@ -265,7 +265,7 @@ function renderEducation() {
       <button class="tl-arrow tl-arrow--right" id="tl-next" onclick="tlNav(1)"  aria-label="Próximo">&#8594;</button>
     </div>`;
 
-  tlGoTo(0, 0);
+  tlGoTo(0, 0, true); // true = skip page scroll (initial render)
 
   // keyboard support
   container.addEventListener('keydown', e => {
@@ -298,7 +298,7 @@ function tlNav(dir) {
 }
 
 // ── Go to a specific year node + achievement index ──────────────────────────────
-function tlGoTo(yearIndex, achIndex = 0) {
+function tlGoTo(yearIndex, achIndex = 0, skipPageScroll = false) {
   const years = data?.education?.timeline;
   if (!years) return;
 
@@ -323,9 +323,11 @@ function tlGoTo(yearIndex, achIndex = 0) {
   // ── render card ──
   tlRenderCard(yr, _achIndex);
 
-  // scroll active node into view on mobile
+  // scroll active node within the rail only (not the full page)
   const activeNode = document.querySelector('.tl-node.active');
-  if (activeNode) activeNode.scrollIntoView({ behavior:'smooth', block:'nearest', inline:'center' });
+  if (activeNode && !skipPageScroll) {
+    activeNode.scrollIntoView({ behavior:'smooth', block:'nearest', inline:'center' });
+  }
 }
 
 // ── Render the detail card for a year + achievement ────────────────────────────
