@@ -3,12 +3,13 @@
   "meta": {
     "title": "Cristiano Souza — Full Stack Developer | Tech Lead",
     "description": "Backend Developer with over 4 years of professional experience in PHP, working as Tech Lead and Analyst Programmer III, focused on quality and stability of solutions.",
-    "email": "",
-    "linkedin": "",
-    "github": "",
-    "cv_url": "#"
+    "email": "cristiano.aquinorj@hotmail.com",
+    "linkedin": "https://www.linkedin.com/in/cristiano-souza-de-aquino-3b288725b/",
+    "github": "https://github.com/cristianoDencode",
+    "cv_url": "https://drive.google.com/file/d/1M96-UfBe3vwyJkawb-iUateEFUgnnsdI/view?usp=drive_link"
   },
   "hero": {
+    "head": "Available for opportunities",
     "name": "CRISTIANO SOUZA",
     "role": "Full Stack Developer | Tech Lead",
     "bio": "Experienced Backend Developer, acting as Tech Lead with a focus on quality, stability, and architectural evolution.",

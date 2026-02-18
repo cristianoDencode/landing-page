@@ -102,6 +102,7 @@ function renderNav() {
 
 function renderHero() {
   const { hero, meta } = data;
+  setText('hero-head', hero.head);
   setText('hero-name', hero.name);
   setText('hero-role', hero.role);
   setText('hero-bio', hero.bio);
