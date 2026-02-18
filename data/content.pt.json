@@ -1,17 +1,17 @@
 {
   "lang": "pt",
   "meta": {
-    "title": "Cristiano Souza — Desenvolvedor Full Stack Pleno",
-    "description": "Especialista em PHP, Node e automações com foco em performance e escalabilidade.",
-    "email": "cristiano@email.com",
-    "linkedin": "https://linkedin.com/in/cristiano-souza",
-    "github": "https://github.com/cristiano-souza",
+    "title": "Cristiano Souza — Desenvolvedor Full Stack | Tech Lead",
+    "description": "Desenvolvedor Backend com mais de 4 anos de experiência em PHP, atuação em sistemas legados governamentais e papel de Tech Lead, focado em qualidade, estabilidade e segurança das soluções.",
+    "email": "",
+    "linkedin": "",
+    "github": "",
     "cv_url": "#"
   },
   "hero": {
     "name": "CRISTIANO SOUZA",
-    "role": "Desenvolvedor Full Stack Pleno",
-    "bio": "Especialista em PHP, Node e automações com foco em performance e escalabilidade.",
+    "role": "Desenvolvedor Full Stack | Tech Lead",
+    "bio": "Desenvolvedor Backend experiente com foco em sistemas governamentais legados, liderança técnica e entrega de soluções seguras e estáveis.",
     "cta_projects": "Ver Projetos",
     "cta_cv": "Ver CV",
     "cta_contact": "Contato",
@@ -37,6 +37,21 @@
             "name": "TypeScript",
             "icon": "devicon-typescript-plain",
             "color": "#3178C6"
+          },
+          {
+            "name": "Python",
+            "icon": "devicon-python-plain",
+            "color": "#3776AB"
+          },
+          {
+            "name": "Go",
+            "icon": "devicon-go-plain",
+            "color": "#00ADD8"
+          },
+          {
+            "name": "Java",
+            "icon": "devicon-java-plain",
+            "color": "#007396"
           }
         ]
       },
@@ -54,10 +69,21 @@
             "color": "#FF2D20"
           },
           {
+            "name": "Spring Boot",
+            "icon": "devicon-spring-plain",
+            "color": "#6DB33F"
+          },
+          {
             "name": "n8n",
             "icon": null,
             "color": "#EA4B71",
             "text": "n8n"
+          },
+          {
+            "name": "Metabase",
+            "icon": null,
+            "color": "#62C370",
+            "text": "Metabase"
           }
         ]
       },
@@ -78,6 +104,16 @@
             "name": "Redis",
             "icon": "devicon-redis-plain",
             "color": "#DC382D"
+          },
+          {
+            "name": "MongoDB",
+            "icon": "devicon-mongodb-plain",
+            "color": "#47A248"
+          },
+          {
+            "name": "SQLite",
+            "icon": "devicon-sqlite-plain",
+            "color": "#003B57"
           }
         ]
       },
@@ -98,6 +134,16 @@
             "name": "Linux",
             "icon": "devicon-linux-plain",
             "color": "#FCC624"
+          },
+          {
+            "name": "Nginx",
+            "icon": "devicon-nginx-plain",
+            "color": "#009639"
+          },
+          {
+            "name": "Apache",
+            "icon": "devicon-apache-plain",
+            "color": "#D22128"
           }
         ]
       }
@@ -106,124 +152,24 @@
   "projects": {
     "title": "Projetos em Destaque",
     "cta_more": "Outros Projetos",
-    "items": [
-      {
-        "id": 1,
-        "title": "Aplicação de Automação",
-        "stack": [
-          "Node.js",
-          "n8n",
-          "Docker"
-        ],
-        "stack_label": "Stack",
-        "achievements": [
-          "Reduzi o tempo de processamento em 30%",
-          "Implementei automações com n8n"
-        ],
-        "gradient": "neon-green",
-        "icon": "⚡"
-      },
-      {
-        "id": 2,
-        "title": "Dashboard Analítica",
-        "stack": [
-          "PHP",
-          "Laravel",
-          "PostgreSQL"
-        ],
-        "stack_label": "Stack",
-        "achievements": [
-          "Banco em tempo real com retenção em 60%",
-          "Escala de retenção com cache avançado"
-        ],
-        "gradient": "neon-purple",
-        "icon": "📊"
-      },
-      {
-        "id": 3,
-        "title": "Banco de Dados",
-        "stack": [
-          "PostgreSQL",
-          "MySQL",
-          "Docker"
-        ],
-        "stack_label": "Dados",
-        "achievements": [
-          "Desenvolvi uma API REST utilizada por 50 mil usuários",
-          "Melhora de performance em produção"
-        ],
-        "gradient": "neon-cyan",
-        "icon": "🗄️"
-      },
-      {
-        "id": 4,
-        "title": "Sistema de Gestão",
-        "stack": [
-          "PHP",
-          "MySQL",
-          "Docker"
-        ],
-        "stack_label": "Stack",
-        "achievements": [
-          "Sistema multi-tenant com isolamento completo",
-          "Performance otimizada com índices e cache"
-        ],
-        "gradient": "neon-purple",
-        "icon": "🏢"
-      },
-      {
-        "id": 5,
-        "title": "Integração de Pagamentos",
-        "stack": [
-          "Node.js",
-          "Stripe",
-          "PostgreSQL"
-        ],
-        "stack_label": "Stack",
-        "achievements": [
-          "Processamento seguro de transações",
-          "Webhooks com retry automático"
-        ],
-        "gradient": "neon-cyan",
-        "icon": "💳"
-      },
-      {
-        "id": 6,
-        "title": "Monitoramento em Tempo Real",
-        "stack": [
-          "Node.js",
-          "WebSockets",
-          "Redis"
-        ],
-        "stack_label": "Stack",
-        "achievements": [
-          "Dashboard com atualização em tempo real",
-          "Sistema de alertas via push notifications"
-        ],
-        "gradient": "neon-green",
-        "icon": "📡"
-      }
-    ]
+    "items": []
   },
   "experience": {
     "title": "Experiência Profissional",
     "items": [
       {
-        "role": "Desenvolvedor Full Stack",
-        "company": "Empresa X",
-        "period": "2022 - Atual",
+        "role": "Tech Lead / Programador Analista III",
+        "company": "Empresa Atual",
+        "period": "Agosto/2021 – Atual",
         "achievements": [
-          "Reduzi o tempo de processamento em 40%",
-          "Implementei automações com n8n"
-        ]
-      },
-      {
-        "role": "Desenvolvedor Backend",
-        "company": "Empresa Y",
-        "period": "2020 - 2022",
-        "achievements": [
-          "Desenvolvi uma API REST utilizada por 50 mil usuários",
-          "Integrações complexas com sistemas terceiros"
+          "Atuação no desenvolvimento e manutenção do software público e-Cidade, sistema corporativo de grande porte utilizado na gestão municipal.",
+          "Trabalho contínuo com código legado, realizando correções, melhorias, refatorações e evolução funcional.",
+          "Atuação em modelo ágil, participando de sprints para entrega de novas funcionalidades e retaguarda para sustentação, correções e suporte técnico.",
+          "Desenvolvimento de APIs REST e integrações entre módulos e sistemas externos.",
+          "Participação em decisões de arquitetura, buscando maior estabilidade, manutenção e performance.",
+          "Realização de code reviews, padronização de código e apoio técnico aos desenvolvedores do time.",
+          "Interface com áreas funcionais para entendimento de regras de negócio complexas e tradução em soluções técnicas confiáveis.",
+          "Evolução profissional dentro da empresa até o cargo de Tech Lead, assumindo responsabilidades técnicas e de orientação do time."
         ]
       }
     ]
@@ -231,139 +177,92 @@
   "skills": {
     "title": "Habilidades e Diferenciais",
     "items": [
-      "Boa comunicação com equipe",
-      "Experiência com metodologias ágeis",
-      "Foco em performance e escalabilidade",
-      "Mentalidade de produto",
-      "Experiência com clientes"
+      "Desenvolvimento em sistemas críticos e ambientes corporativos",
+      "Trabalho com software legado e arquiteturas complexas",
+      "Metodologias ágeis (Scrum, Kanban, Sprints, Retaguarda)",
+      "Liderança Técnica e Orientação de Times",
+      "Code Review e Padronização de Código",
+      "Orientação a Objetos, SOLID, Clean Code, Design Patterns",
+      "APIs REST, MVC, DDD",
+      "Testes automatizados, CI/CD",
+      "Foco em Qualidade, Estabilidade e Segurança",
+      "Aprendizado Contínuo",
+      "Boa Comunicação e Trabalho em Equipe"
     ]
   },
   "education": {
     "title": "Formação & Trajetória",
     "timeline": [
       {
-        "year": "2009",
+        "year": "2008",
         "color": "green",
         "achievements": [
           {
-            "icon": "🎓",
+            "icon": "🩺",
             "type": "Graduação",
-            "title": "Bacharelado em Fisioterapia",
-            "institution": "Universidade Exemplo",
-            "details": "Base clínica em reabilitação, anatomia funcional e atendimento de pacientes.",
-            "tags": [
-              "Fisioterapia",
-              "Reabilitação",
-              "Clínica"
-            ]
-          }
-        ]
-      },
-      {
-        "year": "2010",
-        "color": "purple",
-        "achievements": [
-          {
-            "icon": "📜",
-            "type": "Especialização",
-            "title": "Especialização em RPG",
-            "institution": "Instituto de Posturologia",
-            "details": "Equilíbrio postural e terapias de reeducação postural global.",
-            "tags": [
-              "Postura",
-              "RPG",
-              "Terapia Manual"
-            ]
-          },
-          {
-            "icon": "📜",
-            "type": "Certificado",
-            "title": "Certificação em Pilates Clínico",
-            "institution": "Centro de Pilates Avançado",
-            "details": "Técnicas avançadas de Pilates aplicadas à reabilitação e prevenção de lesões.",
-            "tags": [
-              "Pilates",
-              "Core",
-              "Prevenção"
-            ]
+            "title": "Fisioterapia",
+            "institution": "",
+            "details": "Concluído em Julho/2008",
+            "tags": []
           }
         ]
       },
       {
         "year": "2022",
-        "color": "cyan",
+        "color": "purple",
         "achievements": [
           {
-            "icon": "🎓",
+            "icon": "📌",
             "type": "Pós-Graduação",
-            "title": "Pós-Graduação em Acupuntura",
-            "institution": "Escola de Medicina Integrativa",
-            "details": "Estudo e prática em técnicas de acupuntura, meridianos e energias vitais.",
-            "tags": [
-              "Acupuntura",
-              "Medicina Integrativa",
-              "Energias"
-            ]
+            "title": "Acupuntura",
+            "institution": "",
+            "details": "Concluído em Julho/2022",
+            "tags": []
           }
         ]
       },
       {
         "year": "2024",
-        "color": "green",
+        "color": "cyan",
         "achievements": [
           {
             "icon": "💻",
-            "type": "Graduação",
+            "type": "Tecnólogo",
             "title": "Análise e Desenvolvimento de Sistemas",
-            "institution": "Faculdade de Tecnologia",
-            "details": "Desenvolvimento de software com foco em aplicações web, APIs e bancos de dados.",
-            "tags": [
-              "Programação",
-              "Banco de Dados",
-              "Software"
-            ]
-          },
+            "institution": "",
+            "details": "Concluído em Julho/2024",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "year": "2026",
+        "color": "green",
+        "achievements": [
           {
-            "icon": "📜",
-            "type": "Certificado",
-            "title": "Desenvolvimento Web Full Stack",
-            "institution": "Plataforma Online",
-            "details": "Formação em PHP, Node.js, Laravel e front-end moderno.",
+            "icon": "🚀",
+            "type": "future",
+            "title": "Engenharia de Software",
+            "institution": "",
+            "details": "Previsão de conclusão: Julho/2026",
             "tags": [
-              "PHP",
-              "Node.js",
-              "Laravel"
-            ]
-          },
-          {
-            "icon": "🏆",
-            "type": "Certificado",
-            "title": "Automação com n8n",
-            "institution": "Plataforma Online",
-            "details": "Criação de workflows automatizados e integrações via n8n.",
-            "tags": [
-              "n8n",
-              "Automação",
-              "Integrações"
+              "Em Andamento"
             ]
           }
         ]
       },
       {
-        "year": "2027",
+        "year": "2026",
         "color": "purple",
-        "type": "future",
         "achievements": [
           {
-            "icon": "🚀",
-            "type": "Meta",
-            "title": "Engenharia de Software",
-            "institution": "Em andamento",
-            "details": "Especialização em arquitetura de sistemas, DevOps e escalabilidade em cloud.",
+            "icon": "🏛️",
+            "type": "future",
+            "title": "MBA em Arquitetura de Software – Full Cycle",
+            "institution": "",
+            "details": "Início: Fevereiro/2026, Duração: 2 anos",
             "tags": [
-              "DevOps",
-              "Arquitetura",
-              "Cloud"
+              "Previsão de Início"
             ]
           }
         ]
@@ -372,22 +271,22 @@
   },
   "contact": {
     "title": "Vamos conversar",
-    "subtitle": "Vamos trabalhar juntos? Entre em contato e vamos conversar!",
+    "subtitle": "Estou sempre aberto a novas conexões e oportunidades!",
     "cta": "Entre em Contato",
-    "text": "Respondo em até 24 horas. Estou aberto a oportunidades remotas."
+    "text": "Disponível para oportunidades remotas em tempo integral ou projetos desafiadores que busquem inovação e qualidade."
   },
   "ai_chat": {
     "trigger_label": "Pergunte sobre o Cristiano",
     "title": "Converse com meu assistente",
-    "subtitle": "Pergunte ao meu assistente de IA qualquer coisa sobre mim.",
-    "greeting": "Olá! Eu sou o assistente pessoal do **Cristiano Souza**. Em que posso te ajudar?",
+    "subtitle": "Obtenha respostas rápidas sobre minha experiência e habilidades.",
+    "greeting": "Olá! Eu sou o assistente virtual do Cristiano. Como posso ajudar?",
     "placeholder": "Digite sua mensagem...",
     "suggestions": [
-      "Quais tecnologias ele domina?",
-      "Quais projetos ele já fez?",
-      "Ele tem experiência com Docker?",
-      "Já trabalhou com integrações?",
-      "Como posso entrar em contato?"
+      "Qual a experiência do Cristiano com PHP?",
+      "Em qual tipo de sistema ele trabalha atualmente?",
+      "Quais as responsabilidades de um Tech Lead na empresa dele?",
+      "Ele tem experiência com metodologias ágeis?",
+      "Quais são os principais diferenciais dele?"
     ]
   },
   "nav": {
@@ -402,7 +301,7 @@
       },
       {
         "label": "Habilidades",
-        "href": "#experience"
+        "href": "#skills"
       },
       {
         "label": "Formação",
