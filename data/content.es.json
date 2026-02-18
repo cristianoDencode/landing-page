@@ -1,12 +1,12 @@
 {
   "lang": "es",
   "meta": {
-    "title": "Cristiano Souza — Desarrollador Full Stack | Tech Lead",
-    "description": "Desarrollador Backend con más de 4 años de experiencia profesional en PHP, actuando como Tech Lead y Programador Analista III, enfocado en la calidad y estabilidad de las soluciones.",
-    "email": "",
-    "linkedin": "",
-    "github": "",
-    "cv_url": "#"
+    "title": "Cristiano Souza — Desenvolvedor Full Stack | Tech Lead",
+    "description": "Desenvolvedor Backend com mais de 4 anos de experiência em PHP, atuando como Tech Lead e Programador Analista III, focado em qualidade e estabilidade de soluções.",
+    "email": "cristiano.aquinorj@hotmail.com",
+    "linkedin": "https://www.linkedin.com/in/cristiano-souza-de-aquino-3b288725b/",
+    "github": "https://github.com/cristianoDencode",
+    "cv_url": "https://drive.google.com/file/d/1M96-UfBe3vwyJkawb-iUateEFUgnnsdI/view?usp=sharing"
   },
   "hero": {
     "name": "CRISTIANO SOUZA",
@@ -56,7 +56,7 @@
         ]
       },
       {
-        "label": "Back-end",
+        "label": "Backend",
         "items": [
           {
             "name": "Laravel",
@@ -139,10 +139,38 @@
       }
     ]
   },
-  "projects": {
+"projects": {
     "title": "Proyectos Destacados",
-    "cta_more": "Más Proyectos",
-    "items": []
+    "cta_more": "Otros Proyectos",
+    "items": [{
+      "id": 1,
+      "title": "Aplicación de Automatización",
+      "stack": [
+        "Node.js",
+        "n8n",
+        "Docker"
+      ],
+      "stack_label": "Stack",
+      "achievements": [
+        "¡Creación de automatizaciones para el liderazgo!"
+      ],
+      "gradient": "neon-green",
+      "icon": "📊"
+    },
+    {
+      "id": 2,
+      "title": "Desafíos de Programación",
+      "stack": [
+        "PHP",
+        "Design Patterns"
+      ],
+      "stack_label": "Stack",
+      "achievements": [
+        "Resolver los más diversos desafíos generados por IA."
+      ],
+      "gradient": "neon-purple",
+      "icon": "⚡"
+    }]
   },
   "experience": {
     "title": "Experiencia Profesional",
@@ -286,7 +314,7 @@
       },
       {
         "label": "Habilidades",
-        "href": "#skills"
+        "href": "#experience"
       },
       {
         "label": "Formación",

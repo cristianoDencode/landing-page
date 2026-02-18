@@ -3,10 +3,10 @@
   "meta": {
     "title": "Cristiano Souza — Desenvolvedor Full Stack | Tech Lead",
     "description": "Desenvolvedor Backend com mais de 4 anos de experiência em PHP, atuando como Tech Lead e Programador Analista III, focado em qualidade e estabilidade de soluções.",
-    "email": "",
-    "linkedin": "",
-    "github": "",
-    "cv_url": "#"
+    "email": "cristiano.aquinorj@hotmail.com",
+    "linkedin": "https://www.linkedin.com/in/cristiano-souza-de-aquino-3b288725b/",
+    "github": "https://github.com/cristianoDencode",
+    "cv_url": "https://drive.google.com/file/d/16S8AUjRwlbD0IWIZ8kbjhdjUE0SI_8Jn/view?usp=sharing"
   },
   "hero": {
     "name": "CRISTIANO SOUZA",
@@ -56,7 +56,7 @@
         ]
       },
       {
-        "label": "Back-end",
+        "label": "Backend",
         "items": [
           {
             "name": "Laravel",
@@ -142,7 +142,35 @@
   "projects": {
     "title": "Projetos em Destaque",
     "cta_more": "Outros Projetos",
-    "items": []
+    "items": [{
+      "id": 1,
+      "title": "Aplicação de Automação",
+      "stack": [
+        "Node.js",
+        "n8n",
+        "Docker"
+      ],
+      "stack_label": "Stack",
+      "achievements": [
+        "Criação de Automações para liderança!"
+      ],
+      "gradient": "neon-green",
+      "icon": "📊"
+    },
+    {
+      "id": 2,
+      "title": "Desafios de Programação",
+      "stack": [
+        "PHP",
+        "Design Patterns"
+      ],
+      "stack_label": "Stack",
+      "achievements": [
+        "Resolver os mais diversos desafios gerados por AI."
+      ],
+      "gradient": "neon-purple",
+      "icon": "⚡"
+    }]
   },
   "experience": {
     "title": "Experiência Profissional",
@@ -286,7 +314,7 @@
       },
       {
         "label": "Habilidades",
-        "href": "#skills"
+        "href": "#experience"
       },
       {
         "label": "Formação",
