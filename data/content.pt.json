@@ -2,7 +2,7 @@
   "lang": "pt",
   "meta": {
     "title": "Cristiano Souza — Desenvolvedor Full Stack | Tech Lead",
-    "description": "Desenvolvedor Backend com mais de 4 anos de experiência em PHP, atuação em sistemas legados governamentais e papel de Tech Lead, focado em qualidade, estabilidade e segurança das soluções.",
+    "description": "Desenvolvedor Backend com mais de 4 anos de experiência em PHP, atuando como Tech Lead e Programador Analista III, focado em qualidade e estabilidade de soluções.",
     "email": "",
     "linkedin": "",
     "github": "",
@@ -11,7 +11,7 @@
   "hero": {
     "name": "CRISTIANO SOUZA",
     "role": "Desenvolvedor Full Stack | Tech Lead",
-    "bio": "Desenvolvedor Backend experiente com foco em sistemas governamentais legados, liderança técnica e entrega de soluções seguras e estáveis.",
+    "bio": "Desenvolvedor Backend experiente, atuando como Tech Lead com foco em qualidade, estabilidade e evolução da arquitetura.",
     "cta_projects": "Ver Projetos",
     "cta_cv": "Ver CV",
     "cta_contact": "Contato",
@@ -34,14 +34,14 @@
             "color": "#F7DF1E"
           },
           {
-            "name": "TypeScript",
-            "icon": "devicon-typescript-plain",
-            "color": "#3178C6"
-          },
-          {
             "name": "Python",
             "icon": "devicon-python-plain",
             "color": "#3776AB"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "devicon-typescript-plain",
+            "color": "#3178C6"
           },
           {
             "name": "Go",
@@ -58,11 +58,6 @@
       {
         "label": "Back-end",
         "items": [
-          {
-            "name": "Node.js",
-            "icon": "devicon-nodejs-plain",
-            "color": "#339933"
-          },
           {
             "name": "Laravel",
             "icon": "devicon-laravel-plain",
@@ -82,7 +77,7 @@
           {
             "name": "Metabase",
             "icon": null,
-            "color": "#62C370",
+            "color": "#5092BC",
             "text": "Metabase"
           }
         ]
@@ -99,11 +94,6 @@
             "name": "MySQL",
             "icon": "devicon-mysql-plain",
             "color": "#4479A1"
-          },
-          {
-            "name": "Redis",
-            "icon": "devicon-redis-plain",
-            "color": "#DC382D"
           },
           {
             "name": "MongoDB",
@@ -177,17 +167,16 @@
   "skills": {
     "title": "Habilidades e Diferenciais",
     "items": [
-      "Desenvolvimento em sistemas críticos e ambientes corporativos",
-      "Trabalho com software legado e arquiteturas complexas",
-      "Metodologias ágeis (Scrum, Kanban, Sprints, Retaguarda)",
-      "Liderança Técnica e Orientação de Times",
-      "Code Review e Padronização de Código",
-      "Orientação a Objetos, SOLID, Clean Code, Design Patterns",
-      "APIs REST, MVC, DDD",
-      "Testes automatizados, CI/CD",
-      "Foco em Qualidade, Estabilidade e Segurança",
-      "Aprendizado Contínuo",
-      "Boa Comunicação e Trabalho em Equipe"
+      "Forte atuação em sistemas críticos e ambientes corporativos.",
+      "Facilidade em trabalhar com software legado e arquiteturas complexas.",
+      "Experiência prática com metodologias ágeis (Scrum, Kanban).",
+      "Boa comunicação técnica e capacidade de apoiar e orientar times.",
+      "Perfil orientado à qualidade, segurança e evolução contínua.",
+      "Orientação a Objetos, SOLID, Clean Code, Design Patterns, APIs REST, MVC, DDD.",
+      "Testes automatizados, CI/CD.",
+      "Aprendizado contínuo e foco em boas práticas de engenharia de software.",
+      "Trabalho em equipe.",
+      "Contato com programação desde a adolescência."
     ]
   },
   "education": {
@@ -198,7 +187,7 @@
         "color": "green",
         "achievements": [
           {
-            "icon": "🩺",
+            "icon": "🎓",
             "type": "Graduação",
             "title": "Fisioterapia",
             "institution": "",
@@ -212,9 +201,9 @@
         "color": "purple",
         "achievements": [
           {
-            "icon": "📌",
+            "icon": "📚",
             "type": "Pós-Graduação",
-            "title": "Acupuntura",
+            "title": "Pós Acupuntura",
             "institution": "",
             "details": "Concluído em Julho/2022",
             "tags": []
@@ -227,7 +216,7 @@
         "achievements": [
           {
             "icon": "💻",
-            "type": "Tecnólogo",
+            "type": "Graduação Tecnológica",
             "title": "Análise e Desenvolvimento de Sistemas",
             "institution": "",
             "details": "Concluído em Julho/2024",
@@ -240,14 +229,12 @@
         "color": "green",
         "achievements": [
           {
-            "icon": "🚀",
+            "icon": "🏗️",
             "type": "future",
             "title": "Engenharia de Software",
             "institution": "",
             "details": "Previsão de conclusão: Julho/2026",
-            "tags": [
-              "Em Andamento"
-            ]
+            "tags": []
           }
         ]
       },
@@ -260,10 +247,8 @@
             "type": "future",
             "title": "MBA em Arquitetura de Software – Full Cycle",
             "institution": "",
-            "details": "Início: Fevereiro/2026, Duração: 2 anos",
-            "tags": [
-              "Previsão de Início"
-            ]
+            "details": "Início: Fevereiro/2026. Duração: 2 anos.",
+            "tags": []
           }
         ]
       }
@@ -271,22 +256,22 @@
   },
   "contact": {
     "title": "Vamos conversar",
-    "subtitle": "Estou sempre aberto a novas conexões e oportunidades!",
+    "subtitle": "Estou sempre aberto a novas oportunidades e desafios!",
     "cta": "Entre em Contato",
-    "text": "Disponível para oportunidades remotas em tempo integral ou projetos desafiadores que busquem inovação e qualidade."
+    "text": "Disponível para oportunidades remotas ou híbridas, focado em projetos que buscam inovação e excelência."
   },
   "ai_chat": {
     "trigger_label": "Pergunte sobre o Cristiano",
     "title": "Converse com meu assistente",
-    "subtitle": "Obtenha respostas rápidas sobre minha experiência e habilidades.",
-    "greeting": "Olá! Eu sou o assistente virtual do Cristiano. Como posso ajudar?",
+    "subtitle": "Ele pode responder suas perguntas sobre minha experiência e habilidades.",
+    "greeting": "Olá! Sou o assistente do Cristiano. Como posso ajudar?",
     "placeholder": "Digite sua mensagem...",
     "suggestions": [
       "Qual a experiência do Cristiano com PHP?",
-      "Em qual tipo de sistema ele trabalha atualmente?",
-      "Quais as responsabilidades de um Tech Lead na empresa dele?",
-      "Ele tem experiência com metodologias ágeis?",
-      "Quais são os principais diferenciais dele?"
+      "Ele já trabalhou com metodologias ágeis?",
+      "Quais são os principais projetos dele?",
+      "Quais as tecnologias que ele mais domina?",
+      "Fale mais sobre a experiência dele como Tech Lead."
     ]
   },
   "nav": {
