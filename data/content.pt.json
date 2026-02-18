@@ -143,35 +143,37 @@
   "projects": {
     "title": "Projetos em Destaque",
     "cta_more": "Outros Projetos",
-    "items": [{
-      "id": 1,
-      "title": "Aplicação de Automação",
-      "stack": [
-        "Node.js",
-        "n8n",
-        "Docker"
-      ],
-      "stack_label": "Stack",
-      "achievements": [
-        "Criação de Automações para liderança!"
-      ],
-      "gradient": "neon-green",
-      "icon": "📊"
-    },
-    {
-      "id": 2,
-      "title": "Desafios de Programação",
-      "stack": [
-        "PHP",
-        "Design Patterns"
-      ],
-      "stack_label": "Stack",
-      "achievements": [
-        "Resolver os mais diversos desafios gerados por AI."
-      ],
-      "gradient": "neon-purple",
-      "icon": "⚡"
-    }]
+    "items": [
+      {
+        "id": 1,
+        "title": "Aplicação de Automação",
+        "stack": [
+          "Node.js",
+          "n8n",
+          "Docker"
+        ],
+        "stack_label": "Stack",
+        "achievements": [
+          "Criação de Automações para liderança!"
+        ],
+        "gradient": "neon-green",
+        "icon": "📊"
+      },
+      {
+        "id": 2,
+        "title": "Desafios de Programação",
+        "stack": [
+          "PHP",
+          "Design Patterns"
+        ],
+        "stack_label": "Stack",
+        "achievements": [
+          "Resolver os mais diversos desafios gerados por AI."
+        ],
+        "gradient": "neon-purple",
+        "icon": "⚡"
+      }
+    ]
   },
   "experience": {
     "title": "Experiência Profissional",
@@ -301,6 +303,138 @@
       "Quais são os principais projetos dele?",
       "Quais as tecnologias que ele mais domina?",
       "Fale mais sobre a experiência dele como Tech Lead."
+    ],
+    "faq": [
+      {
+        "keywords": [
+          "php",
+          "back",
+          "backend",
+          "servidor",
+          "laravel"
+        ],
+        "answer": "Cristiano tem **+5 anos** com PHP, incluindo Laravel, desenvolvimento de APIs REST e integração com sistemas legados. É uma das suas principais especialidades."
+      },
+      {
+        "keywords": [
+          "node",
+          "nodejs",
+          "javascript",
+          "js",
+          "express"
+        ],
+        "answer": "Ele trabalha com **Node.js** para criação de APIs, microserviços e automações. Tem experiência com Express e integração com filas e eventos assíncronos."
+      },
+      {
+        "keywords": [
+          "automação",
+          "automacao",
+          "bot",
+          "n8n",
+          "rpa",
+          "workflow"
+        ],
+        "answer": "Automações são uma das paixões do Cristiano! Ele tem experiência com **n8n, scripts de RPA e integrações** entre sistemas para eliminar processos manuais."
+      },
+      {
+        "keywords": [
+          "ágil",
+          "agil",
+          "scrum",
+          "kanban",
+          "metodologia",
+          "sprint"
+        ],
+        "answer": "Sim! Cristiano trabalhou em times ágeis usando **Scrum e Kanban**, participando de sprints, planning e retrospectivas."
+      },
+      {
+        "keywords": [
+          "projeto",
+          "projetos",
+          "portfólio",
+          "portfolio",
+          "trabalho"
+        ],
+        "answer": "Os principais projetos estão listados na seção **Projetos** da página. Role para cima para conferir! Há projetos com PHP, Node, automações e integrações."
+      },
+      {
+        "keywords": [
+          "stack",
+          "tecnologia",
+          "tecnologias",
+          "linguagem",
+          "ferramenta"
+        ],
+        "answer": "O Cristiano domina principalmente **PHP, Node.js, JavaScript, MySQL, Docker e n8n**, além de ferramentas de versionamento e CI/CD."
+      },
+      {
+        "keywords": [
+          "contato",
+          "email",
+          "falar",
+          "contratar",
+          "hire",
+          "disponível",
+          "disponivel"
+        ],
+        "answer": "Você pode entrar em contato pela seção **Contato** da página, ou diretamente pelo email e LinkedIn listados lá. Ele está aberto a oportunidades remotas!"
+      },
+      {
+        "keywords": [
+          "tech lead",
+          "liderança",
+          "lideranca",
+          "lead",
+          "gestão",
+          "gestao",
+          "time"
+        ],
+        "answer": "Cristiano atuou como **Tech Lead**, liderando equipes de desenvolvimento, fazendo code review, definindo arquitetura e mentorando desenvolvedores juniores."
+      },
+      {
+        "keywords": [
+          "banco",
+          "banco de dados",
+          "mysql",
+          "postgres",
+          "sql",
+          "redis"
+        ],
+        "answer": "Ele tem experiência com **MySQL, PostgreSQL e Redis**, incluindo modelagem, otimização de queries e uso de cache para performance."
+      },
+      {
+        "keywords": [
+          "docker",
+          "container",
+          "devops",
+          "deploy",
+          "ci",
+          "cd",
+          "kubernetes"
+        ],
+        "answer": "Cristiano trabalha com **Docker e pipelines de CI/CD**, garantindo deploys consistentes e ambientes replicáveis."
+      },
+      {
+        "keywords": [
+          "remoto",
+          "remote",
+          "freelance",
+          "contrato",
+          "pj"
+        ],
+        "answer": "Sim, ele está **aberto a trabalho remoto**, tanto CLT quanto PJ/freelance. Entre em contato pela seção Contato!"
+      },
+      {
+        "keywords": [
+          "formação",
+          "formacao",
+          "faculdade",
+          "curso",
+          "certificado",
+          "estudo"
+        ],
+        "answer": "A trajetória acadêmica e certificações estão na seção **Formação & Trajetória** da página. Dê uma conferida!"
+      }
     ]
   },
   "nav": {

@@ -33,6 +33,12 @@ async function loadContent(lang) {
     localStorage.setItem('lang', lang);
     renderAll();
     updateLangSwitcher();
+    // Reset chat ao trocar idioma para mostrar greeting e sugestões corretos
+    chatHistory = [];
+    const msgs = document.getElementById('chat-messages');
+    if (msgs) msgs.innerHTML = '';
+    addBotMessage(data.ai_chat.greeting);
+    renderSuggestions();
   } catch (err) {
     console.error('Content load error:', err);
     if (lang !== 'pt') await loadContent('pt');
@@ -463,20 +469,27 @@ function renderAIChat() {
   setText('chat-modal-title', ai_chat.title);
   setText('chat-modal-subtitle', ai_chat.subtitle);
   setAttr('chat-input', 'placeholder', ai_chat.placeholder);
+}
 
+function renderSuggestions() {
+  const { ai_chat } = data;
   const suggestionsEl = document.getElementById('chat-suggestions');
   if (suggestionsEl) {
+    suggestionsEl.style.display = 'flex';
     suggestionsEl.innerHTML = ai_chat.suggestions.map(s => `
       <button class="chat-suggestion" onclick="sendSuggestion('${s.replace(/'/g, "\\'")}')">
         ${s} <span>›</span>
       </button>
     `).join('');
   }
+}
 
-  // Show greeting if no history
-  if (chatHistory.length === 0) {
-    addBotMessage(ai_chat.greeting);
-  }
+function resetChat() {
+  chatHistory = [];
+  const msgs = document.getElementById('chat-messages');
+  if (msgs) msgs.innerHTML = '';
+  addBotMessage(data.ai_chat.greeting);
+  renderSuggestions();
 }
 
 // ─── CHAT FUNCTIONALITY ───────────────────────────────────────────────────────
@@ -493,6 +506,12 @@ function toggleChat() {
     modal.classList.add('open');
     overlay.classList.add('active');
     renderAIChat();
+    if (chatHistory.length === 0) {
+      resetChat();
+    } else {
+      // Sempre re-renderiza sugestões no idioma atual ao abrir
+      renderSuggestions();
+    }
   }
 }
 
@@ -502,11 +521,11 @@ function closeChat() {
 }
 
 function sendSuggestion(text) {
-  hideSuggestions();
   sendMessage(text);
 }
 
 function hideSuggestions() {
+  // Mantido para compatibilidade, mas não usado no fluxo principal
   const el = document.getElementById('chat-suggestions');
   if (el) el.style.display = 'none';
 }
@@ -561,65 +580,66 @@ async function sendMessage(userText) {
 
   showTyping();
 
-  // Placeholder for n8n webhook — replace N8N_WEBHOOK_URL with your actual endpoint
-  const N8N_WEBHOOK_URL = 'https://your-n8n-instance.com/webhook/portfolio-chat';
+  // Simula tempo de "digitação" para experiência mais natural
+  await new Promise(resolve => setTimeout(resolve, 600 + Math.random() * 400));
 
-  try {
-    const res = await fetch(N8N_WEBHOOK_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        message: userText,
-        history: chatHistory.slice(-10),
-        lang: currentLang,
-        context: buildContext()
-      })
-    });
+  hideTyping();
 
-    hideTyping();
+  const reply = matchFAQ(userText);
+  addBotMessage(reply);
+  chatHistory.push({ role: 'assistant', content: reply });
 
-    if (!res.ok) throw new Error('Webhook error');
-    const json = await res.json();
-    const reply = json.reply || json.message || json.output || 'Resposta não disponível.';
-    addBotMessage(reply);
-    chatHistory.push({ role: 'assistant', content: reply });
-
-  } catch (err) {
-    hideTyping();
-    console.error('Chat error:', err);
-    addBotMessage(getFallbackMessage(userText));
-  }
+  // Reexibe sugestões após cada resposta
+  renderSuggestions();
 }
 
-function buildContext() {
-  if (!data) return {};
-  return {
-    name: data.hero.name,
-    role: data.hero.role,
-    bio: data.hero.bio,
-    stack: data.stack.categories.flatMap(c => c.items.map(i => i.name)),
-    projects: data.projects.items.map(p => p.title),
-    email: data.meta.email
-  };
+// ─── FAQ ENGINE ───────────────────────────────────────────────────────────────
+
+function matchFAQ(userText) {
+  if (!data) return 'Assistente não disponível.';
+
+  const q = userText.toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // remove acentos
+    .replace(/[^\w\s]/g, ' ');
+
+  const faq = data.ai_chat?.faq || [];
+
+  // Busca o FAQ com mais keywords encontradas na pergunta
+  let bestMatch = null;
+  let bestScore = 0;
+
+  for (const entry of faq) {
+    const score = entry.keywords.filter(kw => q.includes(kw)).length;
+    if (score > bestScore) {
+      bestScore = score;
+      bestMatch = entry;
+    }
+  }
+
+  if (bestMatch && bestScore > 0) {
+    return bestMatch.answer;
+  }
+
+  // Fallback genérico usando dados do JSON
+  return getFallbackMessage(userText);
 }
 
 function getFallbackMessage(question) {
-  const q = question.toLowerCase();
-  if (!data) return 'Serviço temporariamente indisponível.';
+  const q = question.toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  if (!data) return 'Assistente não disponível.';
   const { hero, meta } = data;
 
-  if (q.includes('contact') || q.includes('contato') || q.includes('email')) {
-    return `Você pode entrar em contato pelo email **${meta.email}** ou pelo LinkedIn.`;
+  const fallbacks = data.ai_chat?.fallbacks;
+  if (fallbacks) {
+    return fallbacks.default
+      .replace('{name}', hero.name)
+      .replace('{bio}', hero.bio);
   }
-  if (q.includes('technolog') || q.includes('tecnolog') || q.includes('stack')) {
-    const techs = data.stack.categories.flatMap(c => c.items.map(i => i.name)).join(', ');
-    return `${hero.name} trabalha com: **${techs}**.`;
-  }
-  if (q.includes('project') || q.includes('projeto')) {
-    const projs = data.projects.items.map(p => p.title).join(', ');
-    return `Projetos em destaque: **${projs}**.`;
-  }
-  return `Sou o assistente do **${hero.name}**. ${hero.bio} Como posso te ajudar?`;
+
+  // Fallback embutido como último recurso
+  const techs = data.stack.categories.flatMap(c => c.items.map(i => i.name)).join(', ');
+  return `Sou o assistente do **${hero.name}**. Posso te contar sobre a experiência dele com **${techs.split(', ').slice(0,4).join(', ')}** e muito mais. O que você quer saber?`;
 }
 
 function handleChatKeydown(e) {
