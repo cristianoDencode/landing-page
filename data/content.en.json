@@ -1,1 +1,301 @@
-"{\n  \"lang\": \"en\",\n  \"meta\": {\n    \"title\": \"Cristiano Souza — Full Stack Developer | Tech Lead\",\n    \"description\": \"Backend Developer with over 4 years of professional experience in PHP, working on governmental legacy systems and in a Tech Lead role, focused on solution quality, stability, and security.\",\n    \"email\": \"\",\n    \"linkedin\": \"\",\n    \"github\": \"\",\n    \"cv_url\": \"#\"\n  },\n  \"hero\": {\n    \"name\": \"CRISTIANO SOUZA\",\n    \"role\": \"Full Stack Developer | Tech Lead\",\n    \"bio\": \"Experienced Backend Developer focused on governmental legacy systems, technical leadership, and delivering secure and stable solutions.\",\n    \"cta_projects\": \"View Projects\",\n    \"cta_cv\": \"View CV\",\n    \"cta_contact\": \"Contact\",\n    \"photo\": \"assets/photo.png\"\n  },\n  \"stack\": {\n    \"title\": \"My Stack\",\n    \"categories\": [\n      {\n        \"label\": \"Languages\",\n        \"items\": [\n          {\n            \"name\": \"PHP\",\n            \"icon\": \"devicon-php-plain\",\n            \"color\": \"#777BB4\"\n          },\n          {\n            \"name\": \"JavaScript\",\n            \"icon\": \"devicon-javascript-plain\",\n            \"color\": \"#F7DF1E\"\n          },\n          {\n            \"name\": \"TypeScript\",\n            \"icon\": \"devicon-typescript-plain\",\n            \"color\": \"#3178C6\"\n          },\n          {\n            \"name\": \"Python\",\n            \"icon\": \"devicon-python-plain\",\n            \"color\": \"#3776AB\"\n          },\n          {\n            \"name\": \"Go\",\n            \"icon\": \"devicon-go-plain\",\n            \"color\": \"#00ADD8\"\n          },\n          {\n            \"name\": \"Java\",\n            \"icon\": \"devicon-java-plain\",\n            \"color\": \"#007396\"\n          }\n        ]\n      },\n      {\n        \"label\": \"Back-end\",\n        \"items\": [\n          {\n            \"name\": \"Node.js\",\n            \"icon\": \"devicon-nodejs-plain\",\n            \"color\": \"#339933\"\n          },\n          {\n            \"name\": \"Laravel\",\n            \"icon\": \"devicon-laravel-plain\",\n            \"color\": \"#FF2D20\"\n          },\n          {\n            \"name\": \"Spring Boot\",\n            \"icon\": \"devicon-spring-plain\",\n            \"color\": \"#6DB33F\"\n          },\n          {\n            \"name\": \"n8n\",\n            \"icon\": null,\n            \"color\": \"#EA4B71\",\n            \"text\": \"n8n\"\n          },\n          {\n            \"name\": \"Metabase\",\n            \"icon\": null,\n            \"color\": \"#62C370\",\n            \"text\": \"Metabase\"\n          }\n        ]\n      },\n      {\n        \"label\": \"Databases\",\n        \"items\": [\n          {\n            \"name\": \"PostgreSQL\",\n            \"icon\": \"devicon-postgresql-plain\",\n            \"color\": \"#4169E1\"\n          },\n          {\n            \"name\": \"MySQL\",\n            \"icon\": \"devicon-mysql-plain\",\n            \"color\": \"#4479A1\"\n          },\n          {\n            \"name\": \"Redis\",\n            \"icon\": \"devicon-redis-plain\",\n            \"color\": \"#DC382D\"\n          },\n          {\n            \"name\": \"MongoDB\",\n            \"icon\": \"devicon-mongodb-plain\",\n            \"color\": \"#47A248\"\n          },\n          {\n            \"name\": \"SQLite\",\n            \"icon\": \"devicon-sqlite-plain\",\n            \"color\": \"#003B57\"\n          }\n        ]\n      },\n      {\n        \"label\": \"DevOps\",\n        \"items\": [\n          {\n            \"name\": \"Docker\",\n            \"icon\": \"devicon-docker-plain\",\n            \"color\": \"#2496ED\"\n          },\n          {\n            \"name\": \"Git\",\n            \"icon\": \"devicon-git-plain\",\n            \"color\": \"#F05032\"\n          },\n          {\n            \"name\": \"Linux\",\n            \"icon\": \"devicon-linux-plain\",\n            \"color\": \"#FCC624\"\n          },\n          {\n            \"name\": \"Nginx\",\n            \"icon\": \"devicon-nginx-plain\",\n            \"color\": \"#009639\"\n          },\n          {\n            \"name\": \"Apache\",\n            \"icon\": \"devicon-apache-plain\",\n            \"color\": \"#D22128\"\n          }\n        ]\n      }\n    ]\n  },\n  \"projects\": {\n    \"title\": \"Featured Projects\",\n    \"cta_more\": \"More Projects\",\n    \"items\": []\n  },\n  \"experience\": {\n    \"title\": \"Professional Experience\",\n    \"items\": [\n      {\n        \"role\": \"Tech Lead / Analyst Programmer III\",\n        \"company\": \"Current Company\",\n        \"period\": \"August/2021 – Present\",\n        \"achievements\": [\n          \"Developed and maintained the e-Cidade public software, a large-scale corporate system used for municipal management.\",\n          \"Continuously worked with legacy code, performing corrections, improvements, refactoring, and functional evolution.\",\n          \"Worked in an agile model, participating in sprints for new feature delivery and backlog for sustainment, corrections, and technical support.\",\n          \"Developed REST APIs and integrations between modules and external systems.\",\n          \"Participated in architecture decisions, seeking greater stability, maintainability, and performance.\",\n          \"Performed code reviews, code standardization, and provided technical support to the development team.\",\n          \"Interfaced with functional areas to understand complex business rules and translate them into reliable technical solutions.\",\n          \"Professional growth within the company to Tech Lead position, assuming technical and team guidance responsibilities.\"\n        ]\n      }\n    ]\n  },\n  \"skills\": {\n    \"title\": \"Skills & Strengths\",\n    \"items\": [\n      \"Development in critical systems and corporate environments\",\n      \"Experience with legacy software and complex architectures\",\n      \"Agile methodologies (Scrum, Kanban, Sprints, Backlog)\",\n      \"Technical Leadership and Team Guidance\",\n      \"Code Review and Code Standardization\",\n      \"Object-Oriented Programming, SOLID, Clean Code, Design Patterns\",\n      \"REST APIs, MVC, DDD\",\n      \"Automated Testing, CI/CD\",\n      \"Focus on Quality, Stability, and Security\",\n      \"Continuous Learning\",\n      \"Good Communication and Teamwork\"\n    ]\n  },\n  \"education\": {\n    \"title\": \"Education & Background\",\n    \"timeline\": [\n      {\n        \"year\": \"2008\",\n        \"color\": \"green\",\n        \"achievements\": [\n          {\n            \"icon\": \"🩺\",\n            \"type\": \"Bachelor's Degree\",\n            \"title\": \"Physiotherapy\",\n            \"institution\": \"\",\n            \"details\": \"Completed in July/2008\",\n            \"tags\": []\n          }\n        ]\n      },\n      {\n        \"year\": \"2022\",\n        \"color\": \"purple\",\n        \"achievements\": [\n          {\n            \"icon\": \"📌\",\n            \"type\": \"Postgraduate\",\n            \"title\": \"Acupuncture\",\n            \"institution\": \"\",\n            \"details\": \"Completed in July/2022\",\n            \"tags\": []\n          }\n        ]\n      },\n      {\n        \"year\": \"2024\",\n        \"color\": \"cyan\",\n        \"achievements\": [\n          {\n            \"icon\": \"💻\",\n            \"type\": \"Technologist Degree\",\n            \"title\": \"Systems Analysis and Development\",\n            \"institution\": \"\",\n            \"details\": \"Completed in July/2024\",\n            \"tags\": []\n          }\n        ]\n      },\n      {\n        \"year\": \"2026\",\n        \"color\": \"green\",\n        \"achievements\": [\n          {\n            \"icon\": \"🚀\",\n            \"type\": \"future\",\n            \"title\": \"Software Engineering\",\n            \"institution\": \"\",\n            \"details\": \"Expected completion: July/2026\",\n            \"tags\": [\n              \"In Progress\"\n            ]\n          }\n        ]\n      },\n      {\n        \"year\": \"2026\",\n        \"color\": \"purple\",\n        \"achievements\": [\n          {\n            \"icon\": \"🏛️\",\n            \"type\": \"future\",\n            \"title\": \"MBA in Software Architecture – Full Cycle\",\n            \"institution\": \"\",\n            \"details\": \"Start: February/2026, Duration: 2 years\",\n            \"tags\": [\n              \"Expected Start\"\n            ]\n          }\n        ]\n      }\n    ]\n  },\n  \"contact\": {\n    \"title\": \"Let's Talk\",\n    \"subtitle\": \"I'm always open to new connections and opportunities!\",\n    \"cta\": \"Get in Touch\",\n    \"text\": \"Available for full-time remote opportunities or challenging projects seeking innovation and quality.\"\n  },\n  \"ai_chat\": {\n    \"trigger_label\": \"Ask about Cristiano\",\n    \"title\": \"Chat with my assistant\",\n    \"subtitle\": \"Get quick answers about my experience and skills.\",\n    \"greeting\": \"Hello! I am Cristiano's virtual assistant. How can I help you?\",\n    \"placeholder\": \"Type your message...\",\n    \"suggestions\": [\n      \"What is Cristiano's experience with PHP?\",\n      \"What type of system does he currently work on?\",\n      \"What are the responsibilities of a Tech Lead in his company?\",\n      \"Does he have experience with agile methodologies?\",\n      \"What are his main differentiators?\"\n    ]\n  },\n  \"nav\": {\n    \"links\": [\n      {\n        \"label\": \"Projects\",\n        \"href\": \"#projects\"\n      },\n      {\n        \"label\": \"Experience\",\n        \"href\": \"#experience\"\n      },\n      {\n        \"label\": \"Skills\",\n        \"href\": \"#skills\"\n      },\n      {\n        \"label\": \"Education\",\n        \"href\": \"#education\"\n      },\n      {\n        \"label\": \"Contact\",\n        \"href\": \"#contact\"\n      }\n    ]\n  }\n}"
+{
+  "lang": "en",
+  "meta": {
+    "title": "Cristiano Souza — Full Stack Developer | Tech Lead",
+    "description": "Backend Developer with over 4 years of professional experience in PHP, working as Tech Lead and Analyst Programmer III, focused on quality and stability of solutions.",
+    "email": "",
+    "linkedin": "",
+    "github": "",
+    "cv_url": "#"
+  },
+  "hero": {
+    "name": "CRISTIANO SOUZA",
+    "role": "Full Stack Developer | Tech Lead",
+    "bio": "Experienced Backend Developer, acting as Tech Lead with a focus on quality, stability, and architectural evolution.",
+    "cta_projects": "View Projects",
+    "cta_cv": "View CV",
+    "cta_contact": "Contact",
+    "photo": "assets/photo.png"
+  },
+  "stack": {
+    "title": "My Stack",
+    "categories": [
+      {
+        "label": "Languages",
+        "items": [
+          {
+            "name": "PHP",
+            "icon": "devicon-php-plain",
+            "color": "#777BB4"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "devicon-javascript-plain",
+            "color": "#F7DF1E"
+          },
+          {
+            "name": "Python",
+            "icon": "devicon-python-plain",
+            "color": "#3776AB"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "devicon-typescript-plain",
+            "color": "#3178C6"
+          },
+          {
+            "name": "Go",
+            "icon": "devicon-go-plain",
+            "color": "#00ADD8"
+          },
+          {
+            "name": "Java",
+            "icon": "devicon-java-plain",
+            "color": "#007396"
+          }
+        ]
+      },
+      {
+        "label": "Back-end",
+        "items": [
+          {
+            "name": "Laravel",
+            "icon": "devicon-laravel-plain",
+            "color": "#FF2D20"
+          },
+          {
+            "name": "Spring Boot",
+            "icon": "devicon-spring-plain",
+            "color": "#6DB33F"
+          },
+          {
+            "name": "n8n",
+            "icon": null,
+            "color": "#EA4B71",
+            "text": "n8n"
+          },
+          {
+            "name": "Metabase",
+            "icon": null,
+            "color": "#5092BC",
+            "text": "Metabase"
+          }
+        ]
+      },
+      {
+        "label": "Databases",
+        "items": [
+          {
+            "name": "PostgreSQL",
+            "icon": "devicon-postgresql-plain",
+            "color": "#4169E1"
+          },
+          {
+            "name": "MySQL",
+            "icon": "devicon-mysql-plain",
+            "color": "#4479A1"
+          },
+          {
+            "name": "MongoDB",
+            "icon": "devicon-mongodb-plain",
+            "color": "#47A248"
+          },
+          {
+            "name": "SQLite",
+            "icon": "devicon-sqlite-plain",
+            "color": "#003B57"
+          }
+        ]
+      },
+      {
+        "label": "DevOps",
+        "items": [
+          {
+            "name": "Docker",
+            "icon": "devicon-docker-plain",
+            "color": "#2496ED"
+          },
+          {
+            "name": "Git",
+            "icon": "devicon-git-plain",
+            "color": "#F05032"
+          },
+          {
+            "name": "Linux",
+            "icon": "devicon-linux-plain",
+            "color": "#FCC624"
+          },
+          {
+            "name": "Nginx",
+            "icon": "devicon-nginx-plain",
+            "color": "#009639"
+          },
+          {
+            "name": "Apache",
+            "icon": "devicon-apache-plain",
+            "color": "#D22128"
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "cta_more": "More Projects",
+    "items": []
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "items": [
+      {
+        "role": "Tech Lead / Analyst Programmer III",
+        "company": "Current Company",
+        "period": "August/2021 – Present",
+        "achievements": [
+          "Involved in the development and maintenance of the e-Cidade public software, a large-scale corporate system used in municipal management.",
+          "Continuous work with legacy code, performing corrections, improvements, refactorings, and functional evolution.",
+          "Participated in an agile model, taking part in sprints for new feature delivery and backend support for maintenance, corrections, and technical assistance.",
+          "Developed REST APIs and integrations between modules and external systems.",
+          "Participated in architectural decisions, aiming for greater stability, maintainability, and performance.",
+          "Performed code reviews, code standardization, and provided technical support to the development team.",
+          "Interfaced with functional areas to understand complex business rules and translate them into reliable technical solutions.",
+          "Professional growth within the company to Tech Lead position, assuming technical responsibilities and team guidance."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills & Strengths",
+    "items": [
+      "Strong experience in critical systems and corporate environments.",
+      "Aptitude for working with legacy software and complex architectures.",
+      "Practical experience with agile methodologies (Scrum, Kanban) in real production contexts.",
+      "Good technical communication and ability to support and guide teams.",
+      "Profile oriented towards quality, security, and continuous evolution.",
+      "Object-Oriented Programming, SOLID, Clean Code, Design Patterns, REST APIs, MVC, DDD.",
+      "Automated testing, CI/CD.",
+      "Continuous learning and focus on software engineering best practices.",
+      "Teamwork.",
+      "Contact with programming since adolescence."
+    ]
+  },
+  "education": {
+    "title": "Education & Background",
+    "timeline": [
+      {
+        "year": "2008",
+        "color": "green",
+        "achievements": [
+          {
+            "icon": "🎓",
+            "type": "Bachelor's Degree",
+            "title": "Physiotherapy",
+            "institution": "",
+            "details": "Concluded in July/2008",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "year": "2022",
+        "color": "purple",
+        "achievements": [
+          {
+            "icon": "📚",
+            "type": "Postgraduate Degree",
+            "title": "Postgraduate in Acupuncture",
+            "institution": "",
+            "details": "Concluded in July/2022",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "year": "2024",
+        "color": "cyan",
+        "achievements": [
+          {
+            "icon": "💻",
+            "type": "Technologist Degree",
+            "title": "Systems Analysis and Development",
+            "institution": "",
+            "details": "Concluded in July/2024",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "year": "2026",
+        "color": "green",
+        "achievements": [
+          {
+            "icon": "🏗️",
+            "type": "future",
+            "title": "Software Engineering",
+            "institution": "",
+            "details": "Expected completion: July/2026",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "year": "2026",
+        "color": "purple",
+        "achievements": [
+          {
+            "icon": "🏛️",
+            "type": "future",
+            "title": "MBA in Software Architecture – Full Cycle",
+            "institution": "",
+            "details": "Start: February/2026. Duration: 2 years.",
+            "tags": []
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "subtitle": "I'm always open to new opportunities and challenges!",
+    "cta": "Get in Touch",
+    "text": "Available for remote or hybrid opportunities, focused on projects seeking innovation and excellence."
+  },
+  "ai_chat": {
+    "trigger_label": "Ask about Cristiano",
+    "title": "Chat with my assistant",
+    "subtitle": "He can answer your questions about my experience and skills.",
+    "greeting": "Hello! I'm Cristiano's assistant. How can I help you?",
+    "placeholder": "Type your message...",
+    "suggestions": [
+      "What is Cristiano's experience with PHP?",
+      "Has he worked with agile methodologies?",
+      "What are his main projects?",
+      "What technologies is he most proficient in?",
+      "Tell me more about his experience as Tech Lead."
+    ]
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Projects",
+        "href": "#projects"
+      },
+      {
+        "label": "Experience",
+        "href": "#experience"
+      },
+      {
+        "label": "Skills",
+        "href": "#skills"
+      },
+      {
+        "label": "Education",
+        "href": "#education"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ]
+  }
+}
