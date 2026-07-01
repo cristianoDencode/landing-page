@@ -1,0 +1,205 @@
+{
+  "lang": "en",
+  "meta": {
+    "controller_name": "Cristiano Souza de Aquino",
+    "controller_email": "cristiano.aquinorj@hotmail.com",
+    "site_url": "https://cristianodencode.github.io/",
+    "site_name": "Portfolio — Cristiano Souza"
+  },
+  "nav": {
+    "back_home": "Back to home",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Transparency about personal data processing, in compliance with Brazil's General Data Protection Law (LGPD — Law No. 13,709/2018).",
+    "last_updated": "Last updated: July 1, 2026",
+    "sections": [
+      {
+        "heading": "1. Who we are",
+        "paragraphs": [
+          "This Privacy Policy describes how {controller_name} (\"Controller\", \"we\") processes personal data on {site_name}, available at {site_url}.",
+          "For privacy questions or to exercise your rights, contact us at {controller_email}."
+        ]
+      },
+      {
+        "heading": "2. What data we collect",
+        "paragraphs": [
+          "We collect only the data necessary to operate this professional portfolio website:"
+        ],
+        "list": [
+          "Browsing data: IP address, browser type, pages visited, date and time of access, and preferred language (when applicable).",
+          "Language preference: stored locally in your browser (localStorage) to remember PT, EN, or ES.",
+          "Chat messages: text you send to the virtual assistant, only if you use the chat feature.",
+          "Contact data: when you email us or message through external channels (LinkedIn, email), we process the information you voluntarily share."
+        ]
+      },
+      {
+        "heading": "3. Purpose and legal bases",
+        "paragraphs": [
+          "We use data for the following purposes, based on legal grounds under the LGPD:"
+        ],
+        "list": [
+          "Display the portfolio and enable site navigation (contract performance or preliminary procedures / legitimate interest).",
+          "Remember your language preference (consent, via local storage).",
+          "Answer questions in the AI-assisted chat about professional experience (consent and legitimate interest).",
+          "Contact you when you request opportunities or information (contract performance or consent).",
+          "Ensure security, prevent fraud, and improve the site experience (legitimate interest)."
+        ]
+      },
+      {
+        "heading": "4. Cookies and similar technologies",
+        "paragraphs": [
+          "This site uses localStorage to save the selected language. We do not use third-party advertising tracking cookies.",
+          "You can clear stored browser data at any time in your device settings."
+        ]
+      },
+      {
+        "heading": "5. Data sharing",
+        "paragraphs": [
+          "We do not sell or rent personal data. Sharing occurs only when necessary:"
+        ],
+        "list": [
+          "Infrastructure providers (GitHub Pages) for site hosting.",
+          "Automation/AI services (when configured) to process chat messages, always with appropriate security measures.",
+          "Competent authorities when required by law or court order."
+        ]
+      },
+      {
+        "heading": "6. Data retention",
+        "paragraphs": [
+          "We retain data for as long as necessary to fulfill the purposes described in this Policy or as required by law.",
+          "Chat messages may be discarded periodically. Language preferences remain on your device until you remove them.",
+          "Email communications are kept as long as needed to respond to requests and meet legal obligations."
+        ]
+      },
+      {
+        "heading": "7. Your rights (data subject)",
+        "paragraphs": [
+          "Under the LGPD, you may request at any time:"
+        ],
+        "list": [
+          "Confirmation of processing and access to your data.",
+          "Correction of incomplete, inaccurate, or outdated data.",
+          "Anonymization, blocking, or deletion of unnecessary or unlawfully processed data.",
+          "Data portability to another provider, when applicable.",
+          "Deletion of data processed based on consent.",
+          "Information about sharing and the possibility of withholding consent.",
+          "Revocation of consent when processing is based on consent."
+        ],
+        "paragraphs_after": [
+          "To exercise your rights, send a request to {controller_email}. We will respond within legal timeframes.",
+          "You may also file a complaint with Brazil's National Data Protection Authority (ANPD): https://www.gov.br/anpd/"
+        ]
+      },
+      {
+        "heading": "8. Security",
+        "paragraphs": [
+          "We adopt reasonable technical and organizational measures to protect data against unauthorized access, loss, or improper alteration.",
+          "No system is 100% secure; we recommend not sharing sensitive or confidential information via chat or public forms."
+        ]
+      },
+      {
+        "heading": "9. International transfer",
+        "paragraphs": [
+          "Some service providers (such as GitHub) may process data on servers outside Brazil. In such cases, we seek to ensure an adequate level of protection under the LGPD."
+        ]
+      },
+      {
+        "heading": "10. Changes to this Policy",
+        "paragraphs": [
+          "We may update this Policy periodically. The date of the last revision will be shown at the top of the page.",
+          "We recommend revisiting this page regularly to stay informed."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "subtitle": "Conditions for using this professional portfolio website.",
+    "last_updated": "Last updated: July 1, 2026",
+    "sections": [
+      {
+        "heading": "1. Acceptance",
+        "paragraphs": [
+          "By accessing and using {site_url}, you agree to these Terms of Use and our Privacy Policy.",
+          "If you do not agree, please stop using the site."
+        ]
+      },
+      {
+        "heading": "2. Purpose of the site",
+        "paragraphs": [
+          "This site presents professional information, projects, experience, and contact options for {controller_name}.",
+          "Content is informational and does not constitute a binding commercial offer unless expressly agreed otherwise."
+        ]
+      },
+      {
+        "heading": "3. Permitted use",
+        "paragraphs": [
+          "You may browse, view information, and contact us through the channels provided.",
+          "You may not use the site for unlawful purposes, send offensive content, attempt to breach systems, perform abusive scraping, or interfere with service operation."
+        ]
+      },
+      {
+        "heading": "4. Intellectual property",
+        "paragraphs": [
+          "Texts, layout, visual identity, described projects, and other materials belong to {controller_name} or their respective owners, protected by applicable law.",
+          "Reproduction, distribution, or modification without prior authorization is prohibited, except when permitted by law."
+        ]
+      },
+      {
+        "heading": "5. Virtual assistant chat (AI)",
+        "paragraphs": [
+          "The site chat uses automated responses based on portfolio information. Answers may contain inaccuracies and do not replace direct communication or formal hiring.",
+          "Do not send sensitive data (health, financial, personal documents) via chat.",
+          "Using the chat implies consent to process messages as described in the Privacy Policy."
+        ]
+      },
+      {
+        "heading": "6. External links",
+        "paragraphs": [
+          "The site may contain links to LinkedIn, GitHub, resume, and other third-party services. We are not responsible for the content or privacy practices of those sites."
+        ]
+      },
+      {
+        "heading": "7. Limitation of liability",
+        "paragraphs": [
+          "The site is provided \"as is.\" We make reasonable efforts to keep information up to date but do not guarantee uninterrupted availability or complete absence of errors.",
+          "To the extent permitted by law, we are not liable for indirect damages arising from use or inability to use the site."
+        ]
+      },
+      {
+        "heading": "8. Privacy and personal data",
+        "paragraphs": [
+          "Personal data processing is governed by the Privacy Policy, which is an integral part of these Terms."
+        ]
+      },
+      {
+        "heading": "9. Changes",
+        "paragraphs": [
+          "We may change these Terms at any time. Relevant changes will be published on this page with a new update date.",
+          "Continued use after changes constitutes acceptance of the new Terms."
+        ]
+      },
+      {
+        "heading": "10. Applicable law and jurisdiction",
+        "paragraphs": [
+          "These Terms are governed by the laws of the Federative Republic of Brazil.",
+          "The courts of the user's domicile in Brazil are chosen to resolve disputes, unless otherwise required by law."
+        ]
+      },
+      {
+        "heading": "11. Contact",
+        "paragraphs": [
+          "Questions about these Terms: {controller_email}."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "text": "© {year} {controller_name}. All rights reserved.",
+    "privacy_link": "Privacy Policy",
+    "terms_link": "Terms of Use"
+  }
+}

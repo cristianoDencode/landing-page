@@ -874,6 +874,31 @@ footer {
   color: var(--neon-green);
 }
 
+.footer-legal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.footer-legal a {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.footer-legal a:hover {
+  color: var(--neon-cyan);
+}
+
+.footer-legal span {
+  color: var(--border-subtle);
+  font-size: 0.72rem;
+}
+
 /* ─────────────────────────────────────────────
    AI CHAT TRIGGER
 ───────────────────────────────────────────── */

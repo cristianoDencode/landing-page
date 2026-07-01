@@ -429,6 +429,11 @@
       }
     ]
   },
+  "footer": {
+    "built": "Built with ♥ · Hosted on GitHub Pages",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
   "nav": {
     "links": [
       {

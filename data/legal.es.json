@@ -1,0 +1,205 @@
+{
+  "lang": "es",
+  "meta": {
+    "controller_name": "Cristiano Souza de Aquino",
+    "controller_email": "cristiano.aquinorj@hotmail.com",
+    "site_url": "https://cristianodencode.github.io/",
+    "site_name": "Portfolio — Cristiano Souza"
+  },
+  "nav": {
+    "back_home": "Volver al inicio",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Uso"
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "subtitle": "Transparencia sobre el tratamiento de datos personales, conforme a la Ley General de Protección de Datos de Brasil (LGPD — Ley nº 13.709/2018).",
+    "last_updated": "Última actualización: 1 de julio de 2026",
+    "sections": [
+      {
+        "heading": "1. Quiénes somos",
+        "paragraphs": [
+          "Esta Política de Privacidad describe cómo {controller_name} (\"Controlador\", \"nosotros\") trata datos personales en {site_name}, disponible en {site_url}.",
+          "Para dudas sobre privacidad o ejercicio de derechos, contáctenos en {controller_email}."
+        ]
+      },
+      {
+        "heading": "2. Qué datos recopilamos",
+        "paragraphs": [
+          "Recopilamos solo los datos necesarios para operar este sitio de portafolio profesional:"
+        ],
+        "list": [
+          "Datos de navegación: dirección IP, tipo de navegador, páginas visitadas, fecha y hora de acceso e idioma preferido (cuando aplique).",
+          "Preferencia de idioma: almacenada localmente en su navegador (localStorage) para recordar PT, EN o ES.",
+          "Mensajes del chat: texto que envía al asistente virtual, solo si utiliza la función de chat.",
+          "Datos de contacto: cuando nos envía correo o mensaje por canales externos (LinkedIn, email), tratamos la información que comparte voluntariamente."
+        ]
+      },
+      {
+        "heading": "3. Finalidad y bases legales",
+        "paragraphs": [
+          "Utilizamos los datos para las siguientes finalidades, con base en las hipótesis legales previstas en la LGPD:"
+        ],
+        "list": [
+          "Mostrar el portafolio y permitir la navegación del sitio (ejecución de contrato o procedimientos preliminares / interés legítimo).",
+          "Recordar su preferencia de idioma (consentimiento, vía almacenamiento local).",
+          "Responder preguntas en el chat asistido por IA sobre experiencia profesional (consentimiento e interés legítimo).",
+          "Contactarle cuando solicite oportunidades o información (ejecución de contrato o consentimiento).",
+          "Garantizar seguridad, prevenir fraudes y mejorar la experiencia del sitio (interés legítimo)."
+        ]
+      },
+      {
+        "heading": "4. Cookies y tecnologías similares",
+        "paragraphs": [
+          "Este sitio utiliza localStorage para guardar el idioma seleccionado. No utilizamos cookies de rastreo publicitario de terceros.",
+          "Puede borrar los datos almacenados en el navegador en cualquier momento desde la configuración de su dispositivo."
+        ]
+      },
+      {
+        "heading": "5. Compartición de datos",
+        "paragraphs": [
+          "No vendemos ni alquilamos datos personales. La compartición ocurre solo cuando es necesaria:"
+        ],
+        "list": [
+          "Proveedores de infraestructura (GitHub Pages) para alojamiento del sitio.",
+          "Servicios de automatización/IA (cuando estén configurados) para procesar mensajes del chat, siempre con medidas de seguridad adecuadas.",
+          "Autoridades competentes cuando lo exija la ley u orden judicial."
+        ]
+      },
+      {
+        "heading": "6. Retención de datos",
+        "paragraphs": [
+          "Conservamos los datos el tiempo necesario para cumplir las finalidades descritas en esta Política o según exija la ley.",
+          "Los mensajes del chat pueden descartarse periódicamente. Las preferencias de idioma permanecen en su dispositivo hasta que las elimine.",
+          "Las comunicaciones por correo se mantienen el tiempo necesario para atender solicitudes y obligaciones legales."
+        ]
+      },
+      {
+        "heading": "7. Sus derechos (titular de datos)",
+        "paragraphs": [
+          "Conforme a la LGPD, puede solicitar en cualquier momento:"
+        ],
+        "list": [
+          "Confirmación de la existencia de tratamiento y acceso a los datos.",
+          "Corrección de datos incompletos, inexactos o desactualizados.",
+          "Anonimización, bloqueo o eliminación de datos innecesarios o tratados en desconformidad.",
+          "Portabilidad de los datos a otro proveedor, cuando aplique.",
+          "Eliminación de datos tratados con base en el consentimiento.",
+          "Información sobre comparticiones y sobre la posibilidad de no consentir.",
+          "Revocación del consentimiento cuando el tratamiento tenga esa base legal."
+        ],
+        "paragraphs_after": [
+          "Para ejercer sus derechos, envíe una solicitud a {controller_email}. Responderemos dentro de los plazos legales.",
+          "También puede presentar una reclamación ante la Autoridad Nacional de Protección de Datos de Brasil (ANPD): https://www.gov.br/anpd/"
+        ]
+      },
+      {
+        "heading": "8. Seguridad",
+        "paragraphs": [
+          "Adoptamos medidas técnicas y organizativas razonables para proteger los datos contra acceso no autorizado, pérdida o alteración indebida.",
+          "Ningún sistema es 100% seguro; recomendamos no compartir información sensible o confidencial por el chat o formularios públicos."
+        ]
+      },
+      {
+        "heading": "9. Transferencia internacional",
+        "paragraphs": [
+          "Algunos proveedores de servicio (como GitHub) pueden procesar datos en servidores fuera de Brasil. En esos casos, buscamos garantizar un nivel adecuado de protección conforme a la LGPD."
+        ]
+      },
+      {
+        "heading": "10. Cambios en esta Política",
+        "paragraphs": [
+          "Podemos actualizar esta Política periódicamente. La fecha de la última revisión se indicará en la parte superior de la página.",
+          "Recomendamos revisar esta página regularmente para mantenerse informado."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Términos de Uso",
+    "subtitle": "Condiciones para utilizar este sitio de portafolio profesional.",
+    "last_updated": "Última actualización: 1 de julio de 2026",
+    "sections": [
+      {
+        "heading": "1. Aceptación",
+        "paragraphs": [
+          "Al acceder y utilizar {site_url}, usted acepta estos Términos de Uso y nuestra Política de Privacidad.",
+          "Si no está de acuerdo, deje de utilizar el sitio."
+        ]
+      },
+      {
+        "heading": "2. Objeto del sitio",
+        "paragraphs": [
+          "Este sitio presenta información profesional, proyectos, experiencia y formas de contacto de {controller_name}.",
+          "El contenido tiene carácter informativo y no constituye una oferta comercial vinculante, salvo acuerdo expreso posterior."
+        ]
+      },
+      {
+        "heading": "3. Uso permitido",
+        "paragraphs": [
+          "Puede navegar, consultar información y contactarnos por los canales disponibles.",
+          "Está prohibido utilizar el sitio con fines ilícitos, enviar contenido ofensivo, intentar vulnerar sistemas, realizar scraping abusivo o interferir en el funcionamiento del servicio."
+        ]
+      },
+      {
+        "heading": "4. Propiedad intelectual",
+        "paragraphs": [
+          "Textos, diseño, identidad visual, proyectos descritos y demás materiales pertenecen a {controller_name} o a sus respectivos titulares, protegidos por la legislación aplicable.",
+          "La reproducción, distribución o modificación sin autorización previa está prohibida, salvo cuando la ley lo permita."
+        ]
+      },
+      {
+        "heading": "5. Chat con asistente virtual (IA)",
+        "paragraphs": [
+          "El chat del sitio utiliza respuestas automatizadas basadas en información del portafolio. Las respuestas pueden contener imprecisiones y no sustituyen comunicación directa o contratación formal.",
+          "No envíe datos sensibles (salud, financieros, documentos personales) por el chat.",
+          "El uso del chat implica consentimiento para el tratamiento de mensajes conforme a la Política de Privacidad."
+        ]
+      },
+      {
+        "heading": "6. Enlaces externos",
+        "paragraphs": [
+          "El sitio puede contener enlaces a LinkedIn, GitHub, currículum y otros servicios de terceros. No nos responsabilizamos por el contenido o prácticas de privacidad de esos sitios."
+        ]
+      },
+      {
+        "heading": "7. Limitación de responsabilidad",
+        "paragraphs": [
+          "El sitio se proporciona \"tal cual\". Hacemos esfuerzos razonables para mantener la información actualizada, pero no garantizamos disponibilidad ininterrumpida ni ausencia total de errores.",
+          "En la medida permitida por la ley, no nos responsabilizamos por daños indirectos derivados del uso o imposibilidad de uso del sitio."
+        ]
+      },
+      {
+        "heading": "8. Privacidad y datos personales",
+        "paragraphs": [
+          "El tratamiento de datos personales se rige por la Política de Privacidad, parte integrante de estos Términos."
+        ]
+      },
+      {
+        "heading": "9. Cambios",
+        "paragraphs": [
+          "Podemos modificar estos Términos en cualquier momento. Los cambios relevantes se publicarán en esta página con nueva fecha de actualización.",
+          "El uso continuado tras los cambios constituye aceptación de los nuevos Términos."
+        ]
+      },
+      {
+        "heading": "10. Ley aplicable y jurisdicción",
+        "paragraphs": [
+          "Estos Términos se rigen por las leyes de la República Federativa del Brasil.",
+          "Se elige el fuero del domicilio del usuario en Brasil para resolver controversias, salvo disposición legal en contrario."
+        ]
+      },
+      {
+        "heading": "11. Contacto",
+        "paragraphs": [
+          "Dudas sobre estos Términos: {controller_email}."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "text": "© {year} {controller_name}. Todos los derechos reservados.",
+    "privacy_link": "Política de Privacidad",
+    "terms_link": "Términos de Uso"
+  }
+}

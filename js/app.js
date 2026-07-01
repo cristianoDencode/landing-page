@@ -58,6 +58,7 @@ function renderAll() {
   renderSkills();
   renderEducation();
   renderContact();
+  renderFooter();
   renderAIChat();
   renderMobileMenu();
   renderHeroStackMini();
@@ -447,6 +448,20 @@ function tlColor(key) {
       || 'var(--neon-green)';
 }
 
+
+// ─── FOOTER ───────────────────────────────────────────────────────────────────
+
+function renderFooter() {
+  const footer = data.footer;
+  if (!footer) return;
+
+  const builtEl = document.getElementById('footer-built');
+  if (builtEl && footer.built) {
+    builtEl.innerHTML = footer.built.replace('♥', '<span class="footer-neon">♥</span>');
+  }
+  setText('footer-privacy-link', footer.privacy);
+  setText('footer-terms-link', footer.terms);
+}
 
 // ─── CONTACT ──────────────────────────────────────────────────────────────────
 

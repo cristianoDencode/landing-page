@@ -437,6 +437,11 @@
       }
     ]
   },
+  "footer": {
+    "built": "Feito com ♥ · Hospedado no GitHub Pages",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Uso"
+  },
   "nav": {
     "links": [
       {
