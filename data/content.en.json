@@ -4,8 +4,8 @@
     "title": "Cristiano Souza — Full Stack Developer | Tech Lead",
     "description": "Backend Developer with over 4 years of professional experience in PHP, working as Tech Lead and Analyst Programmer III, focused on quality and stability of solutions.",
     "email": "contato@cristianodev.com.br",
-    "whatsapp": "5521998528128",
-    "whatsapp_display": "+55 21 99852-8128",
+    "phone": "5521998528128",
+    "phone_display": "+55 21 99852-8128",
     "company_name": "Cristiano Souza De Aquino Desenvolvimento De Software Ltda",
     "cnpj": "61.195.761/0001-30",
     "brand": "CristianoDev",
@@ -302,12 +302,12 @@
   "contact": {
     "title": "Let's Talk",
     "subtitle": "I'm always open to new opportunities and challenges!",
-    "text": "Contact me by email or WhatsApp. I reply within 24 hours.",
+    "text": "Contact me by email or phone. I reply within 24 hours.",
     "cnpj_label": "CNPJ",
     "email_label": "Email",
-    "whatsapp_label": "WhatsApp",
+    "phone_label": "Contact phone",
     "cta": "Send email",
-    "cta_whatsapp": "WhatsApp"
+    "cta_phone": "Contact phone"
   },
   "ai_chat": {
     "trigger_label": "Ask about Cristiano",
@@ -392,7 +392,7 @@
           "remote",
           "opportunity"
         ],
-        "answer": "You can reach out via the **Contact** section, by email at **contato@cristianodev.com.br**, or WhatsApp **+55 21 99852-8128**. He's open to remote opportunities!"
+        "answer": "You can reach out via the **Contact** section, by email at **contato@cristianodev.com.br**, or phone at **+55 21 99852-8128**. He's open to remote opportunities!"
       },
       {
         "keywords": [

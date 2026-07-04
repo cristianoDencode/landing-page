@@ -508,22 +508,22 @@ function renderContact() {
   setText('contact-company-name', meta.company_name);
   setText('contact-company-cnpj', `${contact.cnpj_label || 'CNPJ'}: ${meta.cnpj}`);
   setText('contact-email-label', contact.email_label || 'E-mail');
-  setText('contact-whatsapp-label', contact.whatsapp_label || 'WhatsApp');
+  setText('contact-phone-label', contact.phone_label || 'Telefone de contato');
   setText('contact-email-address', meta.email);
-  setText('contact-whatsapp-address', meta.whatsapp_display);
+  setText('contact-phone-address', meta.phone_display);
   setText('contact-cta-text', contact.cta);
-  setText('contact-whatsapp-text', contact.cta_whatsapp || 'WhatsApp');
+  setText('contact-phone-text', contact.cta_phone || 'Telefone de contato');
 
   const mailto = `mailto:${meta.email}`;
-  const whatsappUrl = `https://wa.me/${meta.whatsapp}`;
+  const phoneUrl = `tel:+${meta.phone}`;
 
   setAttr('contact-email-link', 'href', mailto);
   setAttr('contact-email-address', 'href', mailto);
   setAttr('contact-cta-btn', 'href', mailto);
   setAttr('contact-linkedin-link', 'href', meta.linkedin);
-  setAttr('contact-whatsapp-link', 'href', whatsappUrl);
-  setAttr('contact-whatsapp-address', 'href', whatsappUrl);
-  setAttr('contact-whatsapp-btn', 'href', whatsappUrl);
+  setAttr('contact-phone-link', 'href', phoneUrl);
+  setAttr('contact-phone-address', 'href', phoneUrl);
+  setAttr('contact-phone-btn', 'href', phoneUrl);
 }
 
 // ─── AI CHAT ──────────────────────────────────────────────────────────────────
