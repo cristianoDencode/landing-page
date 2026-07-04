@@ -1,10 +1,11 @@
 {
   "lang": "pt",
   "meta": {
-    "controller_name": "Cristiano Souza de Aquino",
-    "controller_email": "cristiano.aquinorj@hotmail.com",
+    "controller_name": "Cristiano Souza De Aquino Desenvolvimento De Software Ltda",
+    "controller_email": "contato@cristianodev.com.br",
+    "controller_cnpj": "61.195.761/0001-30",
     "site_url": "https://cristianodencode.github.io/",
-    "site_name": "Portfolio — Cristiano Souza"
+    "site_name": "CristianoDev — Portfolio"
   },
   "nav": {
     "back_home": "Voltar ao início",
@@ -198,7 +199,7 @@
     ]
   },
   "footer": {
-    "text": "© {year} {controller_name}. Todos os direitos reservados.",
+    "text": "© {year} CristianoDev · {controller_name} · CNPJ: {controller_cnpj}",
     "privacy_link": "Política de Privacidade",
     "terms_link": "Termos de Uso"
   }

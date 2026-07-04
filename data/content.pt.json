@@ -3,7 +3,12 @@
   "meta": {
     "title": "Cristiano Souza — Desenvolvedor Full Stack | Tech Lead",
     "description": "Desenvolvedor Backend com mais de 4 anos de experiência em PHP, atuando como Tech Lead e Programador Analista III, focado em qualidade e estabilidade de soluções.",
-    "email": "cristiano.aquinorj@hotmail.com",
+    "email": "contato@cristianodev.com.br",
+    "whatsapp": "5521998528128",
+    "whatsapp_display": "+55 21 99852-8128",
+    "company_name": "Cristiano Souza De Aquino Desenvolvimento De Software Ltda",
+    "cnpj": "61.195.761/0001-30",
+    "brand": "CristianoDev",
     "linkedin": "https://www.linkedin.com/in/cristiano-souza-de-aquino-3b288725b/",
     "github": "https://github.com/cristianoDencode",
     "cv_url": "https://drive.google.com/file/d/16S8AUjRwlbD0IWIZ8kbjhdjUE0SI_8Jn/view?usp=sharing"
@@ -17,6 +22,15 @@
     "cta_cv": "Ver CV",
     "cta_contact": "Contato",
     "photo": "assets/photo.png"
+  },
+  "about": {
+    "title": "Sobre",
+    "paragraphs": [
+      "Sou desenvolvedor de software com mais de 4 anos de experiência profissional em PHP, atuando principalmente no desenvolvimento, manutenção e evolução de sistemas corporativos e governamentais.",
+      "Tenho experiência sólida com sistemas legados, especialmente no ecossistema do software público e-Cidade, trabalhando em melhorias de performance, correções, novas funcionalidades, integrações, relatórios, regras de negócio e modernização gradual de aplicações existentes.",
+      "Atualmente atuo como Tech Lead e Programador Analista III, participando de decisões técnicas, revisão de código, apoio ao time de desenvolvimento e evolução da arquitetura dos sistemas. Meu foco é construir soluções estáveis, seguras e bem estruturadas, sempre considerando a realidade do negócio e a necessidade de continuidade operacional.",
+      "Atendo projetos relacionados a desenvolvimento backend, manutenção de sistemas PHP/Laravel, integrações com APIs, automações, relatórios, bancos de dados PostgreSQL e melhorias em sistemas já existentes. Busco entregar soluções práticas, confiáveis e alinhadas ao objetivo de cada cliente."
+    ]
   },
   "stack": {
     "title": "Minha Stack",
@@ -288,8 +302,12 @@
   "contact": {
     "title": "Vamos conversar",
     "subtitle": "Estou sempre aberto a novas oportunidades e desafios!",
-    "cta": "Entre em Contato",
-    "text": "Disponível para oportunidades remotas ou híbridas, focado em projetos que buscam inovação e excelência."
+    "text": "Entre em contato por e-mail ou WhatsApp. Respondo em até 24 horas.",
+    "cnpj_label": "CNPJ",
+    "email_label": "E-mail",
+    "whatsapp_label": "WhatsApp",
+    "cta": "Enviar e-mail",
+    "cta_whatsapp": "WhatsApp"
   },
   "ai_chat": {
     "trigger_label": "Pergunte sobre o Cristiano",
@@ -377,7 +395,7 @@
           "disponível",
           "disponivel"
         ],
-        "answer": "Você pode entrar em contato pela seção **Contato** da página, ou diretamente pelo email e LinkedIn listados lá. Ele está aberto a oportunidades remotas!"
+        "answer": "Você pode entrar em contato pela seção **Contato** da página, pelo e-mail **contato@cristianodev.com.br** ou WhatsApp **+55 21 99852-8128**. Ele está aberto a oportunidades remotas!"
       },
       {
         "keywords": [
@@ -438,12 +456,18 @@
     ]
   },
   "footer": {
-    "built": "Feito com ♥ · Hospedado no GitHub Pages",
+    "copyright": "© {year} CristianoDev",
+    "company": "Cristiano Souza De Aquino Desenvolvimento De Software Ltda",
+    "cnpj": "CNPJ: 61.195.761/0001-30",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Uso"
   },
   "nav": {
     "links": [
+      {
+        "label": "Sobre",
+        "href": "#about"
+      },
       {
         "label": "Projetos",
         "href": "#projects"

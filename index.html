@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=20260704-1" />
 
   <!-- Favicon placeholder -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
@@ -134,6 +134,16 @@
 
 <div class="section-divider"></div>
 
+<!-- ─── ABOUT ─────────────────────────────────── -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title animate-on-scroll" id="about-title">Sobre</h2>
+    <div class="about-content animate-on-scroll" id="about-content"></div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
 <!-- ─── MY STACK ──────────────────────────────── -->
 <section id="stack">
   <div class="container">
@@ -206,23 +216,43 @@
       <div class="contact-box animate-on-scroll">
         <div style="font-size:2.5rem;">📬</div>
 
-        <p id="contact-text" style="font-size:0.9rem; color:var(--text-secondary); text-align:center; max-width:340px;">
-          Respondo em até 24 horas. Estou aberto a oportunidades remotas.
-        </p>
+        <div class="contact-company" id="contact-company-block">
+          <p class="contact-company-name" id="contact-company-name"></p>
+          <p class="contact-company-cnpj" id="contact-company-cnpj"></p>
+          <p class="contact-company-detail">
+            <span id="contact-email-label">E-mail</span>:
+            <a id="contact-email-address" href="mailto:contato@cristianodev.com.br">contato@cristianodev.com.br</a>
+          </p>
+          <p class="contact-company-detail">
+            <span id="contact-whatsapp-label">WhatsApp</span>:
+            <a id="contact-whatsapp-address" href="#" target="_blank" rel="noopener">+55 21 99852-8128</a>
+          </p>
+        </div>
+
+        <p id="contact-text" class="contact-text"></p>
 
         <div class="contact-icons">
-          <a id="contact-email-link" href="#" class="contact-icon-btn" title="Email">
+          <a id="contact-email-link" href="mailto:contato@cristianodev.com.br" class="contact-icon-btn" title="E-mail">
             <i class="fa fa-envelope"></i>
+          </a>
+          <a id="contact-whatsapp-link" href="#" target="_blank" rel="noopener" class="contact-icon-btn" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
           </a>
           <a id="contact-linkedin-link" href="#" target="_blank" rel="noopener" class="contact-icon-btn" title="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
           </a>
         </div>
 
-        <a class="btn btn-primary" id="contact-cta-btn" href="#">
-          <i class="fa fa-paper-plane"></i>
-          <span id="contact-cta-text">Entre em Contato</span>
-        </a>
+        <div class="contact-actions">
+          <a class="btn btn-primary" id="contact-cta-btn" href="mailto:contato@cristianodev.com.br">
+            <i class="fa fa-paper-plane"></i>
+            <span id="contact-cta-text">Enviar e-mail</span>
+          </a>
+          <a class="btn btn-secondary" id="contact-whatsapp-btn" href="#" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i>
+            <span id="contact-whatsapp-text">WhatsApp</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -230,10 +260,10 @@
 
 <!-- ─── FOOTER ────────────────────────────────── -->
 <footer>
-  <div class="container">
-    <p class="footer-text" id="footer-built">
-      Built with <span class="footer-neon">♥</span> · Hosted on GitHub Pages
-    </p>
+  <div class="container footer-inner">
+    <p class="footer-brand" id="footer-copyright">© 2026 CristianoDev</p>
+    <p class="footer-company" id="footer-company"></p>
+    <p class="footer-cnpj" id="footer-cnpj"></p>
     <nav class="footer-legal" id="footer-legal" aria-label="Legal">
       <a href="politica-de-privacidade.html" id="footer-privacy-link">Política de Privacidade</a>
       <span aria-hidden="true">·</span>
@@ -290,7 +320,7 @@
 </div>
 
 <!-- ─── SCRIPTS ───────────────────────────────── -->
-<script src="js/app.js"></script>
+<script src="js/app.js?v=20260704-1"></script>
 
 </body>
 </html>

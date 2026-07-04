@@ -39,6 +39,7 @@ function interpolate(text, vars) {
   return text
     .replace(/\{controller_name\}/g, vars.controller_name)
     .replace(/\{controller_email\}/g, vars.controller_email)
+    .replace(/\{controller_cnpj\}/g, vars.controller_cnpj || '')
     .replace(/\{site_url\}/g, vars.site_url)
     .replace(/\{site_name\}/g, vars.site_name)
     .replace(/\{year\}/g, vars.year);

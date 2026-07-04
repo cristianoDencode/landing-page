@@ -11,10 +11,16 @@ let chatHistory = [];
 // ─── INIT ─────────────────────────────────────────────────────────────────────
 
 async function init() {
-  const savedLang = localStorage.getItem('lang') || detectBrowserLang();
-  await loadContent(savedLang);
+  let savedLang = detectBrowserLang();
+  try {
+    savedLang = localStorage.getItem('lang') || savedLang;
+  } catch (err) {
+    console.warn('Não foi possível acessar o idioma salvo:', err);
+  }
+
   setupEventListeners();
   animateOnScroll();
+  await loadContent(savedLang);
 }
 
 function detectBrowserLang() {
@@ -30,7 +36,11 @@ async function loadContent(lang) {
     if (!res.ok) throw new Error(`Failed to load content.${lang}.json`);
     data = await res.json();
     currentLang = lang;
-    localStorage.setItem('lang', lang);
+    try {
+      localStorage.setItem('lang', lang);
+    } catch (err) {
+      console.warn('Não foi possível salvar o idioma:', err);
+    }
     renderAll();
     updateLangSwitcher();
     // Reset chat ao trocar idioma para mostrar greeting e sugestões corretos
@@ -42,6 +52,14 @@ async function loadContent(lang) {
   } catch (err) {
     console.error('Content load error:', err);
     if (lang !== 'pt') await loadContent('pt');
+    else showContentLoadError();
+  }
+}
+
+function showContentLoadError() {
+  const about = document.getElementById('about-content');
+  if (about && !about.textContent.trim()) {
+    about.innerHTML = '<p>Não foi possível carregar o conteúdo. Atualize a página ou acesse o site por um servidor HTTP.</p>';
   }
 }
 
@@ -52,6 +70,7 @@ function renderAll() {
   document.documentElement.lang = data.lang;
   renderNav();
   renderHero();
+  renderAbout();
   renderStack();
   renderProjects();
   renderExperience();
@@ -127,6 +146,21 @@ function renderHero() {
     photo.src = hero.photo;
     photo.alt = hero.name;
   }
+}
+
+// ─── ABOUT ────────────────────────────────────────────────────────────────────
+
+function renderAbout() {
+  const { about } = data;
+  if (!about) return;
+
+  setText('about-title', about.title);
+  const container = document.getElementById('about-content');
+  if (!container) return;
+
+  container.innerHTML = about.paragraphs
+    .map(p => `<p>${p}</p>`)
+    .join('');
 }
 
 // ─── STACK ────────────────────────────────────────────────────────────────────
@@ -452,13 +486,14 @@ function tlColor(key) {
 // ─── FOOTER ───────────────────────────────────────────────────────────────────
 
 function renderFooter() {
-  const footer = data.footer;
+  const { footer, meta } = data;
   if (!footer) return;
 
-  const builtEl = document.getElementById('footer-built');
-  if (builtEl && footer.built) {
-    builtEl.innerHTML = footer.built.replace('♥', '<span class="footer-neon">♥</span>');
-  }
+  const year = new Date().getFullYear();
+  const copyright = (footer.copyright || '').replace('{year}', year);
+  setText('footer-copyright', copyright);
+  setText('footer-company', footer.company || meta.company_name);
+  setText('footer-cnpj', footer.cnpj || `CNPJ: ${meta.cnpj}`);
   setText('footer-privacy-link', footer.privacy);
   setText('footer-terms-link', footer.terms);
 }
@@ -469,11 +504,26 @@ function renderContact() {
   const { contact, meta } = data;
   setText('contact-title', contact.title);
   setText('contact-subtitle', contact.subtitle);
-  setText('contact-cta-btn', contact.cta);
   setText('contact-text', contact.text);
-  setAttr('contact-email-link', 'href', `mailto:${meta.email}`);
+  setText('contact-company-name', meta.company_name);
+  setText('contact-company-cnpj', `${contact.cnpj_label || 'CNPJ'}: ${meta.cnpj}`);
+  setText('contact-email-label', contact.email_label || 'E-mail');
+  setText('contact-whatsapp-label', contact.whatsapp_label || 'WhatsApp');
+  setText('contact-email-address', meta.email);
+  setText('contact-whatsapp-address', meta.whatsapp_display);
+  setText('contact-cta-text', contact.cta);
+  setText('contact-whatsapp-text', contact.cta_whatsapp || 'WhatsApp');
+
+  const mailto = `mailto:${meta.email}`;
+  const whatsappUrl = `https://wa.me/${meta.whatsapp}`;
+
+  setAttr('contact-email-link', 'href', mailto);
+  setAttr('contact-email-address', 'href', mailto);
+  setAttr('contact-cta-btn', 'href', mailto);
   setAttr('contact-linkedin-link', 'href', meta.linkedin);
-  setAttr('contact-cta-btn', 'href', `mailto:${meta.email}`);
+  setAttr('contact-whatsapp-link', 'href', whatsappUrl);
+  setAttr('contact-whatsapp-address', 'href', whatsappUrl);
+  setAttr('contact-whatsapp-btn', 'href', whatsappUrl);
 }
 
 // ─── AI CHAT ──────────────────────────────────────────────────────────────────
