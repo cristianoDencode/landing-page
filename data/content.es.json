@@ -11,7 +11,7 @@
     "brand": "CristianoDev",
     "linkedin": "https://www.linkedin.com/in/cristiano-souza-de-aquino-3b288725b/",
     "github": "https://github.com/cristianoDencode",
-    "cv_url": "https://drive.google.com/file/d/1K3scmT2SdqTokvpNs0uasnat6fBCvxDG/view?usp=drive_link"
+    "cv_url": "assets/cv/cv-es-2027.pdf"
   },
   "hero": {
     "head": "Disponible para oportunidades",
@@ -275,10 +275,10 @@
         "achievements": [
           {
             "icon": "🏗️",
-            "type": "future",
+            "type": "Grado",
             "title": "Ingeniería de Software",
             "institution": "",
-            "details": "Previsión de finalización: Julio/2026",
+            "details": "Concluido en Julio/2026",
             "tags": []
           }
         ]

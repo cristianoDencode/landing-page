@@ -11,7 +11,7 @@
     "brand": "CristianoDev",
     "linkedin": "https://www.linkedin.com/in/cristiano-souza-de-aquino-3b288725b/",
     "github": "https://github.com/cristianoDencode",
-    "cv_url": "https://drive.google.com/file/d/16S8AUjRwlbD0IWIZ8kbjhdjUE0SI_8Jn/view?usp=sharing"
+    "cv_url": "assets/cv/cv-pt-2027.pdf"
   },
   "hero": {
     "head": "Disponível para oportunidades",
@@ -275,10 +275,10 @@
         "achievements": [
           {
             "icon": "🏗️",
-            "type": "future",
+            "type": "Bacharelado",
             "title": "Engenharia de Software",
             "institution": "",
-            "details": "Previsão de conclusão: Julho/2026",
+            "details": "Concluído em Julho/2026",
             "tags": []
           }
         ]

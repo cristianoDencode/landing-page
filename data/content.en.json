@@ -11,7 +11,7 @@
     "brand": "CristianoDev",
     "linkedin": "https://www.linkedin.com/in/cristiano-souza-de-aquino-3b288725b/",
     "github": "https://github.com/cristianoDencode",
-    "cv_url": "https://drive.google.com/file/d/1M96-UfBe3vwyJkawb-iUateEFUgnnsdI/view?usp=drive_link"
+    "cv_url": "assets/cv/cv-en-2027.pdf"
   },
   "hero": {
     "head": "Available for opportunities",
@@ -275,10 +275,10 @@
         "achievements": [
           {
             "icon": "🏗️",
-            "type": "future",
+            "type": "Bachelor's Degree",
             "title": "Software Engineering",
             "institution": "",
-            "details": "Expected completion: July/2026",
+            "details": "Concluded in July/2026",
             "tags": []
           }
         ]
