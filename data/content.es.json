@@ -84,12 +84,6 @@
             "color": "#6DB33F"
           },
           {
-            "name": "n8n",
-            "icon": null,
-            "color": "#EA4B71",
-            "text": "n8n"
-          },
-          {
             "name": "Metabase",
             "icon": null,
             "color": "#5092BC",
@@ -100,6 +94,12 @@
       {
         "label": "IA & Automatización",
         "items": [
+          {
+            "name": "n8n",
+            "icon": null,
+            "color": "#EA4B71",
+            "text": "n8n"
+          },
           {
             "name": "Prompt Engineering",
             "icon": null,
