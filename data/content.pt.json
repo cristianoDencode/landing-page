@@ -98,6 +98,23 @@
         ]
       },
       {
+        "label": "IA & Automação",
+        "items": [
+          {
+            "name": "Prompt Engineering",
+            "icon": null,
+            "color": "#22D3EE",
+            "text": "Prompt"
+          },
+          {
+            "name": "Uso de IA",
+            "icon": null,
+            "color": "#A855F7",
+            "text": "AI"
+          }
+        ]
+      },
+      {
         "label": "Banco de Dados",
         "items": [
           {
